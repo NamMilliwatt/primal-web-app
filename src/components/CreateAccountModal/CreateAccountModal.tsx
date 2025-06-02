@@ -41,13 +41,13 @@ const CreateAccountModal: Component<{
         <div class={styles.description}>
           {intl.formatMessage(t.createNewDescription)}
         </div>
-        <div class={styles.actions}>
+        {/* <div class={styles.actions}>
           <ButtonPrimary
             onClick={onCreateAccount}
           >
             {intl.formatMessage(tActions.createAccount)}
           </ButtonPrimary>
-        </div>
+        </div> */}
         <div class={styles.alternative}>
         {intl.formatMessage(t.alreadyHaveAccount)}&nbsp;
           <ButtonLink onClick={props.onLogin}>

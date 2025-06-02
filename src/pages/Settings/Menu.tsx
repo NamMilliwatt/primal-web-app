@@ -76,7 +76,7 @@ const Menu: Component = () => {
         </Show>
       </div>
 
-      <Show when={account?.sec}>
+      {/* <Show when={account?.sec}> */}
         <div class={styles.webVersion}>
           <ButtonPrimary onClick={() => {
             account?.actions.logout();
@@ -85,7 +85,7 @@ const Menu: Component = () => {
             {intl.formatMessage(tActions.logout)}
           </ButtonPrimary>
         </div>
-      </Show>
+      {/* </Show> */}
 
       <div class={styles.webVersion}>
         <div class={styles.title}>version</div>

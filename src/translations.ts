@@ -88,12 +88,22 @@ export const login = {
   },
   description: {
     id: 'login.description',
-    defaultMessage: 'Enter your Nostr private key (starting with “nsec”):',
+    defaultMessage: 'Enter your MW username:',
+    description: 'Label describing the login proccess',
+  },
+  appPasswordDesc: {
+    id: 'login.appPasswordDescription',
+    defaultMessage: 'App Password:',
     description: 'Label describing the login proccess',
   },
   invalidNsec: {
     id: 'login.invalidNsec',
     defaultMessage: 'Please enter a valid Nostr private key',
+    description: 'Label informing the user of an invalid nsec key',
+  },
+  invalidAppPassword: {
+    id: 'login.invalidAppPassword',
+    defaultMessage: 'Please enter a valid app password',
     description: 'Label informing the user of an invalid nsec key',
   },
 };
@@ -175,6 +185,11 @@ export const actions = {
   login: {
     id: 'actions.login',
     defaultMessage: 'Login',
+    description: 'Login action, button label',
+  },
+  enclaveLogin: {
+    id: 'actions.loginWithEnclave',
+    defaultMessage: 'Enclave Login',
     description: 'Login action, button label',
   },
   loginNow: {
@@ -764,6 +779,11 @@ export const navBar = {
     id: 'navbar.settings',
     defaultMessage: 'Settings',
     description: 'Label for the nav bar item link to Settings page',
+  },
+  signOut: {
+    id: 'navbar.signOut',
+    defaultMessage: 'Sign Out',
+    description: 'Label for the nav bar item link to Sign Out page',
   },
   help: {
     id: 'navbar.help',
