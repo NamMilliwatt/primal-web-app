@@ -12,6 +12,7 @@ import CreatePinModal from '../CreatePinModal/CreatePinModal';
 import TextInput from '../TextInput/TextInput';
 import { nip19 } from '../../lib/nTools';
 import { storeSec } from '../../lib/localStore';
+
 import AdvancedSearchDialog from '../AdvancedSearch/AdvancedSearchDialog';
 
 const LoginModal: Component<{
@@ -24,16 +25,21 @@ const LoginModal: Component<{
   const account = useAccountContext();
 
   const [step, setStep] = createSignal<'login' | 'pin' | 'none'>('login')
-  const [enteredKey, setEnteredKey] = createSignal('');
+  const [username, setUsername] = createSignal('');
+  const [appPassword, setAppPassword] = createSignal('');
 
   let loginInput: HTMLInputElement | undefined;
+  
 
   const onLogin = () => {
-    const sec = enteredKey();
+    // const sec = enteredKey();
 
-    if (!isValidNsec()) return;
+    // if (!isValidNsec()) return;
 
-    account?.actions.setSec(sec);
+    // account?.actions.setSec(sec);
+
+    // Handle login with username and app password
+  
     setStep(() => 'pin');
   };
 
@@ -44,29 +50,45 @@ const LoginModal: Component<{
 
   const onAbort = () => {
     setStep(() => 'login');
-    setEnteredKey('');
+    // setEnteredKey('');
+    setUsername('');
+    setAppPassword('');
     props.onAbort && props.onAbort();
   }
 
-  const isValidNsec: () => boolean = () => {
-    const key = enteredKey();
+  const isValidAppPassword: () => boolean = () => {
+    const key = appPassword();
 
     if (key.length === 0) {
       return false;
     }
 
-    if (key.startsWith('nsec')) {
-      try {
-        const decoded = nip19.decode(key);
+    return true;
+  }
 
-        return decoded.type === 'nsec' && decoded.data;
-      } catch(e) {
-        return false;
-      }
-    }
+  // const isValidNsec: () => boolean = () => {
+  //   const key = enteredKey();
 
-    return false;
-  };
+  //   if (key.length === 0) {
+  //     return false;
+  //   }
+
+  //   if (key.startsWith('nsec')) {
+  //     try {
+  //       const decoded = nip19.decode(key);
+
+  //       return decoded.type === 'nsec' && decoded.data;
+  //     } catch(e) {
+  //       return false;
+  //     }
+  //   }
+
+  //   return false;
+  // };
+
+  const isValidUsername: () => boolean = () => {
+    return true;
+  }
 
   createEffect(() => {
     if (props.open && step() === 'login') {
@@ -74,11 +96,11 @@ const LoginModal: Component<{
     }
   });
 
-  const onKeyUp = (e: KeyboardEvent) => {
-    if (e.code === 'Enter' && isValidNsec()) {
-      onLogin();
-    }
-  };
+  // const onKeyUp = (e: KeyboardEvent) => {
+  //   if (e.code === 'Enter' && isValidNsec()) {
+  //     onLogin();
+  //   }
+  // };
 
   return (
     <Switch>
@@ -100,21 +122,37 @@ const LoginModal: Component<{
             <div class={styles.inputs}>
               <TextInput
                 ref={loginInput}
-                type="password"
-                value={enteredKey()}
-                onKeyUp={onKeyUp}
-                onChange={setEnteredKey}
-                validationState={enteredKey().length === 0 || isValidNsec() ? 'valid' : 'invalid'}
+                type="text"
+                value={username()}
+                // onKeyUp={onKeyUp}
+                onChange={setUsername}
+                validationState={username().length === 0 || isValidUsername() ? 'valid' : 'invalid'}
                 errorMessage={intl.formatMessage(tLogin.invalidNsec)}
+              />
+            </div>
+
+            <div class={styles.description}>
+              {intl.formatMessage(tLogin.appPasswordDesc)}
+            </div>
+            <div class={styles.inputs}>
+              <TextInput
+                // ref={app}
+                type="password"
+                value={appPassword()}
+                // onKeyUp={onKeyUp}
+                onChange={setAppPassword}
+                validationState={appPassword().length === 0 || isValidAppPassword() ? 'valid' : 'invalid'}
+                errorMessage={intl.formatMessage(tLogin.invalidAppPassword)}
               />
             </div>
             <div class={styles.actions}>
               <ButtonPrimary
                 onClick={onLogin}
-                disabled={enteredKey().length === 0 || !isValidNsec()}
+                disabled={username().length === 0 || !isValidUsername()}
               >
                 {intl.formatMessage(tActions.login)}
               </ButtonPrimary>
+
             </div>
           </div>
         </AdvancedSearchDialog>
@@ -124,9 +162,9 @@ const LoginModal: Component<{
         <CreatePinModal
           open={step() === 'pin'}
           onAbort={() => {
-            onStoreSec(account?.sec);
+            // onStoreSec(account?.sec);
           }}
-          valueToEncrypt={enteredKey()}
+          valueToEncrypt={username()}
           onPinApplied={onStoreSec}
         />
       </Match>

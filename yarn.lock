@@ -10,6 +10,7 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+<<<<<<< HEAD
 "@babel/code-frame@^7.27.1":
   version "7.27.1"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.27.1.tgz#200f715e66d52a23b221a9435534a91cc13ad5be"
@@ -39,12 +40,44 @@
     "@babel/template" "^7.27.2"
     "@babel/traverse" "^7.27.4"
     "@babel/types" "^7.27.3"
+=======
+"@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.2":
+  version "7.26.2"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.26.2.tgz#4b5fab97d33338eff916235055f0ebc21e573a85"
+  integrity sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.25.9"
+    js-tokens "^4.0.0"
+    picocolors "^1.0.0"
+
+"@babel/compat-data@^7.26.5":
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.26.5.tgz#df93ac37f4417854130e21d72c66ff3d4b897fc7"
+  integrity sha512-XvcZi1KWf88RVbF9wn8MN6tYFloU5qX8KjuF3E1PVBmJ9eypXfs4GRiJwLuTZL0iSnJUKn1BFPa5BPZZJyFzPg==
+
+"@babel/core@^7.23.3":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.26.7.tgz#0439347a183b97534d52811144d763a17f9d2b24"
+  integrity sha512-SRijHmF0PSPgLIBYlWnG0hyeJLwXE2CgpsXaMOrtt2yp9/86ALw6oUlj9KYuZ0JN07T4eBMVIW4li/9S1j2BGA==
+  dependencies:
+    "@ampproject/remapping" "^2.2.0"
+    "@babel/code-frame" "^7.26.2"
+    "@babel/generator" "^7.26.5"
+    "@babel/helper-compilation-targets" "^7.26.5"
+    "@babel/helper-module-transforms" "^7.26.0"
+    "@babel/helpers" "^7.26.7"
+    "@babel/parser" "^7.26.7"
+    "@babel/template" "^7.25.9"
+    "@babel/traverse" "^7.26.7"
+    "@babel/types" "^7.26.7"
+>>>>>>> 43be1874 (Update layout login for MW login)
     convert-source-map "^2.0.0"
     debug "^4.1.0"
     gensync "^1.0.0-beta.2"
     json5 "^2.2.3"
     semver "^6.3.1"
 
+<<<<<<< HEAD
 "@babel/generator@^7.21.1", "@babel/generator@^7.27.3":
   version "7.27.3"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.27.3.tgz#ef1c0f7cfe3b5fc8cbb9f6cc69f93441a68edefc"
@@ -52,10 +85,20 @@
   dependencies:
     "@babel/parser" "^7.27.3"
     "@babel/types" "^7.27.3"
+=======
+"@babel/generator@^7.23.6", "@babel/generator@^7.26.5":
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.26.5.tgz#e44d4ab3176bbcaf78a5725da5f1dc28802a9458"
+  integrity sha512-2caSP6fN9I7HOe6nqhtft7V4g7/V/gfDsC3Ag4W7kEzzvRGKqiv0pu0HogPiZ3KaVSoNDhUws6IJjDjpfmYIXw==
+  dependencies:
+    "@babel/parser" "^7.26.5"
+    "@babel/types" "^7.26.5"
+>>>>>>> 43be1874 (Update layout login for MW login)
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.25"
     jsesc "^3.0.2"
 
+<<<<<<< HEAD
 "@babel/helper-annotate-as-pure@^7.27.1":
   version "7.27.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.27.3.tgz#f31fd86b915fc4daf1f3ac6976c59be7084ed9c5"
@@ -70,10 +113,20 @@
   dependencies:
     "@babel/compat-data" "^7.27.2"
     "@babel/helper-validator-option" "^7.27.1"
+=======
+"@babel/helper-compilation-targets@^7.26.5":
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.26.5.tgz#75d92bb8d8d51301c0d49e52a65c9a7fe94514d8"
+  integrity sha512-IXuyn5EkouFJscIDuFF5EsiSolseme1s0CZB+QxVugqJLYmKdxI1VfIBOst0SUu4rnk2Z7kqTwmoO1lp3HIfnA==
+  dependencies:
+    "@babel/compat-data" "^7.26.5"
+    "@babel/helper-validator-option" "^7.25.9"
+>>>>>>> 43be1874 (Update layout login for MW login)
     browserslist "^4.24.0"
     lru-cache "^5.1.1"
     semver "^6.3.1"
 
+<<<<<<< HEAD
 "@babel/helper-create-class-features-plugin@^7.27.1":
   version "7.27.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.27.1.tgz#5bee4262a6ea5ddc852d0806199eb17ca3de9281"
@@ -95,6 +148,8 @@
     "@babel/traverse" "^7.27.1"
     "@babel/types" "^7.27.1"
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 "@babel/helper-module-imports@7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.18.6.tgz#1e3ebdbbd08aad1437b428c50204db13c5a3ca6e"
@@ -102,6 +157,7 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
+<<<<<<< HEAD
 "@babel/helper-module-imports@^7.18.6", "@babel/helper-module-imports@^7.27.1":
   version "7.27.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz#7ef769a323e2655e126673bb6d2d6913bbead204"
@@ -256,6 +312,103 @@
   dependencies:
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.27.1"
+=======
+"@babel/helper-module-imports@^7.22.15", "@babel/helper-module-imports@^7.25.9":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.25.9.tgz#e7f8d20602ebdbf9ebbea0a0751fb0f2a4141715"
+  integrity sha512-tnUA4RsrmflIM6W6RFTLFSXITtl0wKjgpnLgXyowocVPrbYrLUXSBXDgTs8BlbmIzIdlBySRQjINYs2BAkiLtw==
+  dependencies:
+    "@babel/traverse" "^7.25.9"
+    "@babel/types" "^7.25.9"
+
+"@babel/helper-module-transforms@^7.26.0":
+  version "7.26.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.26.0.tgz#8ce54ec9d592695e58d84cd884b7b5c6a2fdeeae"
+  integrity sha512-xO+xu6B5K2czEnQye6BHA7DolFFmS3LB7stHZFaOLb1pAwO1HWLS8fXA+eh0A2yIvltPVmx3eNNDBJA2SLHXFw==
+  dependencies:
+    "@babel/helper-module-imports" "^7.25.9"
+    "@babel/helper-validator-identifier" "^7.25.9"
+    "@babel/traverse" "^7.25.9"
+
+"@babel/helper-plugin-utils@^7.25.9":
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.26.5.tgz#18580d00c9934117ad719392c4f6585c9333cc35"
+  integrity sha512-RS+jZcRdZdRFzMyr+wcsaqOmld1/EqTghfaBGQQd/WnRdzdlvSZ//kF7U8VQTxf1ynZ4cjUcYgjVGx13ewNPMg==
+
+"@babel/helper-string-parser@^7.25.9":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-string-parser/-/helper-string-parser-7.25.9.tgz#1aabb72ee72ed35789b4bbcad3ca2862ce614e8c"
+  integrity sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==
+
+"@babel/helper-validator-identifier@^7.25.9":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.25.9.tgz#24b64e2c3ec7cd3b3c547729b8d16871f22cbdc7"
+  integrity sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==
+
+"@babel/helper-validator-option@^7.25.9":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.25.9.tgz#86e45bd8a49ab7e03f276577f96179653d41da72"
+  integrity sha512-e/zv1co8pp55dNdEcCynfj9X7nyUKUXoUEwfXqaZt0omVOmDe9oOTdKStH4GmAw6zxMFs50ZayuMfHDKlO7Tfw==
+
+"@babel/helpers@^7.26.7":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.26.7.tgz#fd1d2a7c431b6e39290277aacfd8367857c576a4"
+  integrity sha512-8NHiL98vsi0mbPQmYAGWwfcFaOy4j2HY49fXJCfuDcdE7fMIsH9a7GdaeXpIBsbT7307WU8KCMp5pUVDNL4f9A==
+  dependencies:
+    "@babel/template" "^7.25.9"
+    "@babel/types" "^7.26.7"
+
+"@babel/parser@^7.1.0", "@babel/parser@^7.20.7", "@babel/parser@^7.25.9", "@babel/parser@^7.26.5", "@babel/parser@^7.26.7":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.26.7.tgz#e114cd099e5f7d17b05368678da0fb9f69b3385c"
+  integrity sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==
+  dependencies:
+    "@babel/types" "^7.26.7"
+
+"@babel/plugin-syntax-jsx@^7.18.6":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.25.9.tgz#a34313a178ea56f1951599b929c1ceacee719290"
+  integrity sha512-ld6oezHQMZsZfp6pWtbjaNDF2tiiCYYDqQszHt5VV437lewP9aSi2Of99CK0D0XB21k7FLgnLcmQKyKzynfeAA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.25.9"
+
+"@babel/runtime@^7.23.8":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.7.tgz#f4e7fe527cd710f8dc0618610b61b4b060c3c341"
+  integrity sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
+"@babel/template@^7.25.9":
+  version "7.25.9"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.25.9.tgz#ecb62d81a8a6f5dc5fe8abfc3901fc52ddf15016"
+  integrity sha512-9DGttpmPvIxBb/2uwpVo3dqJ+O6RooAFOS+lB+xDqoE2PVCE8nfoHMdZLpfCQRLwvohzXISPZcgxt80xLfsuwg==
+  dependencies:
+    "@babel/code-frame" "^7.25.9"
+    "@babel/parser" "^7.25.9"
+    "@babel/types" "^7.25.9"
+
+"@babel/traverse@^7.25.9", "@babel/traverse@^7.26.7":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.7.tgz#99a0a136f6a75e7fb8b0a1ace421e0b25994b8bb"
+  integrity sha512-1x1sgeyRLC3r5fQOM0/xtQKsYjyxmFjaOrLJNtZ81inNjyJHGIolTULPiSc/2qe1/qfpFLisLQYFnnZl7QoedA==
+  dependencies:
+    "@babel/code-frame" "^7.26.2"
+    "@babel/generator" "^7.26.5"
+    "@babel/parser" "^7.26.7"
+    "@babel/template" "^7.25.9"
+    "@babel/types" "^7.26.7"
+    debug "^4.3.1"
+    globals "^11.1.0"
+
+"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.20.7", "@babel/types@^7.23.6", "@babel/types@^7.25.9", "@babel/types@^7.26.5", "@babel/types@^7.26.7":
+  version "7.26.7"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.26.7.tgz#5e2b89c0768e874d4d061961f3a5a153d71dc17a"
+  integrity sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==
+  dependencies:
+    "@babel/helper-string-parser" "^7.25.9"
+    "@babel/helper-validator-identifier" "^7.25.9"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@cashu/cashu-ts@0.9.0":
   version "0.9.0"
@@ -268,6 +421,7 @@
     "@scure/bip39" "^1.2.1"
     buffer "^6.0.3"
 
+<<<<<<< HEAD
 "@cashu/cashu-ts@^2.1.0":
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/@cashu/cashu-ts/-/cashu-ts-2.5.2.tgz#808bdc9bdd30cf4a3477e9116cdc77792005f1c9"
@@ -278,6 +432,8 @@
     "@scure/bip32" "^1.5.0"
     buffer "^6.0.3"
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 "@cookbook/solid-intl@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@cookbook/solid-intl/-/solid-intl-0.1.2.tgz#14a8f6af630f31127d83b89f194e3e68a4ccba0a"
@@ -402,19 +558,34 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
+<<<<<<< HEAD
 "@floating-ui/core@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.1.tgz#1abc6b157d4a936174f9dbd078278c3a81c8bc6b"
   integrity sha512-azI0DrjMMfIug/ExbBaeDVJXcY0a7EPvPjb2xAJPa4HeimBX+Z18HK8QQR3jb6356SnDDdxx+hinMLcJEDdOjw==
+=======
+"@floating-ui/core@^1.6.0":
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.6.9.tgz#64d1da251433019dafa091de9b2886ff35ec14e6"
+  integrity sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@floating-ui/utils" "^0.2.9"
 
 "@floating-ui/dom@^1.5.1", "@floating-ui/dom@^1.6.11":
+<<<<<<< HEAD
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.7.1.tgz#76a4e3cbf7a08edf40c34711cf64e0cc8053d912"
   integrity sha512-cwsmW/zyw5ltYTUeeYJ60CnQuPqmGwuGVhG9w0PRaRKkAyi38BT5CKrpIbb+jtahSwUl04cWzSx9ZOIxeS6RsQ==
   dependencies:
     "@floating-ui/core" "^1.7.1"
+=======
+  version "1.6.13"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.6.13.tgz#a8a938532aea27a95121ec16e667a7cbe8c59e34"
+  integrity sha512-umqzocjDgNRGTuO7Q8CU32dkHkECqI8ZdMZ5Swb6QAM0t5rnlrN3lGo1hdpscRd3WS8T6DKYK4ephgIH9iRh3w==
+  dependencies:
+    "@floating-ui/core" "^1.6.0"
+>>>>>>> 43be1874 (Update layout login for MW login)
     "@floating-ui/utils" "^0.2.9"
 
 "@floating-ui/utils@^0.2.9":
@@ -422,10 +593,17 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.9.tgz#50dea3616bc8191fb8e112283b49eaff03e78429"
   integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
 
+<<<<<<< HEAD
 "@formatjs/cli@6.1.5":
   version "6.1.5"
   resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-6.1.5.tgz#1ad046d9efba6bca6541376908244169ee47886c"
   integrity sha512-tODw0+EvE14ai6ZNFT1ja879Jk3be/8ydxJPxIBfVIdm9iyoz9mWMemhMR6cGzGGv+3Heu5RxpPArc6tN27FTA==
+=======
+"@formatjs/cli@^6.0.4":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/cli/-/cli-6.5.1.tgz#abfa8ec311683441c527cd5a3f28b4f911ff8310"
+  integrity sha512-JptxQysoKiVZkGfd1u9GTlt88IQ1NUCUpxWI7Obkr7cZAupIBT5QbyL1NPq3UAyTgXODQ+09IUwZhJwVExW41g==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@formatjs/ecma402-abstract@2.2.4":
   version "2.2.4"
@@ -508,16 +686,28 @@
     buffer "^6.0.3"
 
 "@internationalized/date@^3.4.0":
+<<<<<<< HEAD
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.8.1.tgz#fb3709440060a9efa0722615e83550e682e83221"
   integrity sha512-PgVE6B6eIZtzf9Gu5HvJxRK3ufUFz9DhspELuhW/N0GuMGMTLvPQNRkHP2hTuP9lblOk+f+1xi96sPiPXANXAA==
+=======
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.7.0.tgz#23a4956308ee108e308517a7137c69ab8f5f2ad9"
+  integrity sha512-VJ5WS3fcVx0bejE/YHfbDKR/yawZgKqn/if+oEeLqNwBtPzVB06olkfcnojTmEMX+gTpH+FlQ69SHNitJ8/erQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@swc/helpers" "^0.5.0"
 
 "@internationalized/number@^3.2.1":
+<<<<<<< HEAD
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/@internationalized/number/-/number-3.6.2.tgz#504bf772238420c06b63ec58957c1cfcf6d92755"
   integrity sha512-E5QTOlMg9wo5OrKdHD6edo1JJlIoOsylh0+mbf0evi1tHJwMZfJSaBpGtnJV9N7w3jeiioox9EG/EWRWPh82vg==
+=======
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@internationalized/number/-/number-3.6.0.tgz#dc6ba20c41b25eb605f1d5cac7d8668e9022c224"
+  integrity sha512-PtrRcJVy7nw++wn4W2OuePQQfTqDzfusSuY1QTtui4wa7r+rGVtR75pO8CyKvHvzyQYi3Q1uO5sY0AsB4e65Bw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@swc/helpers" "^0.5.0"
 
@@ -561,14 +751,22 @@
     emojilib "^3.0.10"
     match-sorter "^6.3.1"
 
+<<<<<<< HEAD
 "@kobalte/core@0.13.9":
   version "0.13.9"
   resolved "https://registry.yarnpkg.com/@kobalte/core/-/core-0.13.9.tgz#5edbe5342624fa1829b7b61e11cf2fef4ba127fa"
   integrity sha512-TkeSpgNy7I5k8jwjqT9CK3teAxN0aFb3yyL9ODb06JVYMwXIk+UKrizoAF1ahLUP85lKnxv44B4Y5cXkHShgqw==
+=======
+"@kobalte/core@0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@kobalte/core/-/core-0.13.3.tgz#44df194bd78077920a81e779fb4e83f8add7c9d6"
+  integrity sha512-7ansvAwiIz2EYuifI8jmGj+ZNG/3R4hdkXZkCEFVKsQzq3vZpuSiAXgrdZeQOR4Zby7gxLOzpakjfv7D/3PPGw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@floating-ui/dom" "^1.5.1"
     "@internationalized/date" "^3.4.0"
     "@internationalized/number" "^3.2.1"
+<<<<<<< HEAD
     "@kobalte/utils" "^0.9.1"
     "@solid-primitives/props" "^3.1.8"
     "@solid-primitives/resize-observer" "^2.0.26"
@@ -576,6 +774,13 @@
     solid-prevent-scroll "^0.1.4"
 
 "@kobalte/utils@^0.9.1":
+=======
+    "@kobalte/utils" "^0.9.0"
+    solid-presence "^0.1.6"
+    solid-prevent-scroll "^0.1.4"
+
+"@kobalte/utils@^0.9.0":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@kobalte/utils/-/utils-0.9.1.tgz#f648aaf2b794143ff23dda56dff05b42bdc20453"
   integrity sha512-eeU60A3kprIiBDAfv9gUJX1tXGLuZiKMajUfSQURAF2pk4ZoMYiqIzmrMBvzcxP39xnYttgTyQEVLwiTZnrV4w==
@@ -588,6 +793,7 @@
     "@solid-primitives/refs" "^1.0.5"
     "@solid-primitives/utils" "^6.2.1"
 
+<<<<<<< HEAD
 "@milkdown/core@7.3.6":
   version "7.3.6"
   resolved "https://registry.yarnpkg.com/@milkdown/core/-/core-7.3.6.tgz#814261c1b62f1330e6e398900a3a0eeb57506d78"
@@ -730,6 +936,150 @@
     "@milkdown/exception" "7.3.6"
     nanoid "^5.0.0"
     tslib "^2.5.0"
+=======
+"@milkdown/core@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/core/-/core-7.6.2.tgz#7f18fb74097959bd8c43ab6f798067d18acc9228"
+  integrity sha512-/mS8bozVx8zwnHEveKW86/G164z9ICjkdYvfQfWzhjXcuJCo8xK0YPQC1ftU+WuJ068wZL0ErfOQj+582u1oXg==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    remark-parse "^11.0.0"
+    remark-stringify "^11.0.0"
+    tslib "^2.8.1"
+    unified "^11.0.3"
+
+"@milkdown/ctx@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/ctx/-/ctx-7.6.2.tgz#0ec9d118ed0b3919b7684cc087615320d7a063bd"
+  integrity sha512-vOwqcpjtsMW5sVdhpl8LgF6QU8trEgCvLcGj8LDfcZE3ZdoSk7v3vp/y40JiZKBSZCPjievzkA4jvi1seOsVIg==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    tslib "^2.8.1"
+
+"@milkdown/exception@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/exception/-/exception-7.6.2.tgz#7357e2ac812311c4409a336a549851c7e1997075"
+  integrity sha512-Zdlq0+FRL5bVYxWe8PvEyul+mbq0BG61WLJTANGHliAYB9/su/96OQAp9eq0f1Wrb+8C4cCr/N5O29lEZIQiHw==
+  dependencies:
+    tslib "^2.8.1"
+
+"@milkdown/plugin-emoji@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/plugin-emoji/-/plugin-emoji-7.6.2.tgz#fc76a2fafa57c49682ed29811aa00513a8742787"
+  integrity sha512-NgUnbKT0hAdNxPCZkf92XBh+5I9pSb1vDd1/VlD0kvWETFNKt/KV0TbudK+E2tOSfWnG+QpHvk+Hzso7yV7jtw==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    "@milkdown/utils" "7.6.2"
+    emoji-regex "^10.0.0"
+    node-emoji "^2.1.3"
+    remark-emoji "^5.0.0"
+    tslib "^2.8.1"
+    twemoji "^14.0.2"
+    unist-util-visit "^5.0.0"
+
+"@milkdown/plugin-history@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/plugin-history/-/plugin-history-7.6.2.tgz#475b5b5d7c4548d3fa49937934ffb63a4b89e306"
+  integrity sha512-6p2TEIsUfZZnvB/VqhInMNdcjNYuTaq7jnU9E0i9u5cWk1UAL6u2IVN4wjHNDcScqImGBueFxZ0ZnYXDModzTw==
+  dependencies:
+    "@milkdown/utils" "7.6.2"
+    tslib "^2.8.1"
+
+"@milkdown/plugin-listener@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/plugin-listener/-/plugin-listener-7.6.2.tgz#b4da4d021b320cd33b4d152fbbdf21dacf59024c"
+  integrity sha512-fBvm0+9kV4Jly6NNAtWe/9+fBO7ZXQf/mff0/AUGdwC+2hZskBiFX5m8RywWPaFgKeZzv3Mg5hvy6HSJeS205g==
+  dependencies:
+    "@milkdown/utils" "7.6.2"
+    "@types/lodash.debounce" "^4.0.7"
+    lodash.debounce "^4.0.8"
+    tslib "^2.8.1"
+
+"@milkdown/plugin-slash@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/plugin-slash/-/plugin-slash-7.6.2.tgz#cc4af928aae32bf795055549fd5e8fc681454001"
+  integrity sha512-qb3uGn4mQruDy3NSah8hNtfJz6Pq6zLKYUZOOznE1OwuT8DX+1J0jgUS2x3NP2Z5iwwtA4CKa62SgS9shIqPTQ==
+  dependencies:
+    "@floating-ui/dom" "^1.5.1"
+    "@milkdown/exception" "7.6.2"
+    "@milkdown/utils" "7.6.2"
+    "@types/lodash.debounce" "^4.0.7"
+    lodash.debounce "^4.0.8"
+    tslib "^2.8.1"
+
+"@milkdown/preset-commonmark@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/preset-commonmark/-/preset-commonmark-7.6.2.tgz#e093b71b076beaf74aa7fb3bf8ee83995d943355"
+  integrity sha512-N5+upmuh/QuvGmn65WTSKzvHuMtMhbJvjwf1Npav0tQc1XsPGr4j52+d34nEMQoCedCczcsjbNMBfeZCDuPL0A==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    "@milkdown/utils" "7.6.2"
+    "@sindresorhus/slugify" "^2.2.0"
+    remark-inline-links "^7.0.0"
+    tslib "^2.8.1"
+    unist-util-visit "^5.0.0"
+
+"@milkdown/preset-gfm@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/preset-gfm/-/preset-gfm-7.6.2.tgz#2f2df5000b2eace0ee4510325fc20bf851da8ad5"
+  integrity sha512-GlENZ0UlV2aAg7+pWb5luUAZxFPZpU8O+sLA4wKRiIRA+naxwCvISE/kNwUIOMqqXIg1//Xb1c+CDO/6Of2OOw==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    "@milkdown/utils" "7.6.2"
+    prosemirror-safari-ime-span "^1.0.1"
+    remark-gfm "^4.0.0"
+    tslib "^2.8.1"
+
+"@milkdown/prose@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/prose/-/prose-7.6.2.tgz#1a5cceda0ec647054f694fb33ed19a73d71c8766"
+  integrity sha512-iHHQrp13XO/i+b2bTG79mTLKW8eVyp6dJMNrdvrF+k3AnLlZ1CfneSoNZoyw93RBzmyDeZNRoS5Fq3T9gv5zAw==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    prosemirror-changeset "^2.2.1"
+    prosemirror-commands "^1.6.2"
+    prosemirror-dropcursor "^1.8.1"
+    prosemirror-gapcursor "^1.3.2"
+    prosemirror-history "^1.4.1"
+    prosemirror-inputrules "^1.4.0"
+    prosemirror-keymap "^1.2.2"
+    prosemirror-model "^1.24.1"
+    prosemirror-schema-list "^1.5.0"
+    prosemirror-state "^1.4.3"
+    prosemirror-tables "^1.6.2"
+    prosemirror-transform "^1.10.2"
+    prosemirror-view "^1.37.1"
+    tslib "^2.8.1"
+
+"@milkdown/theme-nord@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/theme-nord/-/theme-nord-7.6.2.tgz#4e79309979750a20894ce889011e6ed96cef81a8"
+  integrity sha512-8Vb/97qdS0XmWMLq9BiCrQHVRiA8LvJWCNybegbQqbM8DMEUG33DTNYDifAlg3cOGMSs8mn/t26LL+Qay8HiDA==
+  dependencies:
+    clsx "^2.0.0"
+    tslib "^2.8.1"
+
+"@milkdown/transformer@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/transformer/-/transformer-7.6.2.tgz#51f4ad5a8eed62373cc4aa02040c680df90d5cca"
+  integrity sha512-MQtk/eNso4SDn7D/S8nUAm/PVRjIYelGC+mcV2Y0b9VeKNebEyZ7jfWoEEXaF+6uMnmX7kKtaWDRBqGfBxpGrg==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    remark "^15.0.1"
+    remark-parse "^11.0.0"
+    remark-stringify "^11.0.0"
+    tslib "^2.8.1"
+    unified "^11.0.3"
+
+"@milkdown/utils@7.6.2", "@milkdown/utils@^7.3.6":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@milkdown/utils/-/utils-7.6.2.tgz#522e6e41cd6e41074dd4305bada11efb4fd92bb1"
+  integrity sha512-od1XyFxf354Y6C2qlX3cqOIJkTN26Ug0sehqI2Zs3E2CdWVLSbhDuz5m81AA0FXB9VazM62byBJ66l2uO7zcTQ==
+  dependencies:
+    "@milkdown/exception" "7.6.2"
+    nanoid "^5.0.0"
+    tslib "^2.8.1"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@noble/ciphers@^0.5.1":
   version "0.5.3"
@@ -743,12 +1093,21 @@
   dependencies:
     "@noble/hashes" "1.3.2"
 
+<<<<<<< HEAD
 "@noble/curves@^1.0.0", "@noble/curves@^1.6.0", "@noble/curves@~1.9.0":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.9.1.tgz#9654a0bc6c13420ae252ddcf975eaf0f58f0a35c"
   integrity sha512-k11yZxZg+t+gWvBbIswW0yoJlu8cHOC7dhunwOzoWH/mXGBiYyR4YY6hAEK/3EUs4UpB8la1RfdRpeGsFHkWsA==
   dependencies:
     "@noble/hashes" "1.8.0"
+=======
+"@noble/curves@^1.0.0", "@noble/curves@~1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.8.1.tgz#19bc3970e205c99e4bdb1c64a4785706bce497ff"
+  integrity sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==
+  dependencies:
+    "@noble/hashes" "1.7.1"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@noble/curves@~1.1.0":
   version "1.1.0"
@@ -767,17 +1126,28 @@
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.2.tgz#6f26dbc8fbc7205873ce3cee2f690eba0d421b39"
   integrity sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==
 
+<<<<<<< HEAD
 "@noble/hashes@1.8.0", "@noble/hashes@^1.4.0", "@noble/hashes@^1.5.0", "@noble/hashes@~1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.8.0.tgz#cee43d801fcef9644b11b8194857695acd5f815a"
   integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
+=======
+"@noble/hashes@1.7.1", "@noble/hashes@~1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.7.1.tgz#5738f6d765710921e7a751e00c20ae091ed8db0f"
+  integrity sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@noble/hashes@~1.3.0", "@noble/hashes@~1.3.1":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.3.tgz#39908da56a4adc270147bb07968bf3b16cfe1699"
   integrity sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==
 
+<<<<<<< HEAD
 "@nozbe/microfuzz@1.0.0":
+=======
+"@nozbe/microfuzz@^1.0.0":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@nozbe/microfuzz/-/microfuzz-1.0.0.tgz#89a2b43d3ee9db1979e1144230253c97e838cc6a"
   integrity sha512-XKIg/guk+s1tkPTkHch9hfGOWgsKojT7BqSQddXTppOfVr3SWQhhTCqbgQaPTbppf9gc2kFeG0gpBZZ612UXHA==
@@ -787,6 +1157,7 @@
   resolved "https://registry.yarnpkg.com/@picocss/pico/-/pico-1.5.10.tgz#94f813f5de6206d5a4492b801337eadf6dfcc889"
   integrity sha512-+LafMsrwPxXQMk6sI///TmSInCwwZmq+K7SikyL3N/4GhhwzyPC+TQLUEqmrLyjluR+uIpFFcqjty30Rtr6GxQ==
 
+<<<<<<< HEAD
 "@popperjs/core@^2.9.0":
   version "2.11.8"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
@@ -797,6 +1168,8 @@
   resolved "https://registry.yarnpkg.com/@remirror/core-constants/-/core-constants-3.0.0.tgz#96fdb89d25c62e7b6a5d08caf0ce5114370e3b8f"
   integrity sha512-42aWfPrimMfDKDi4YegyS7x+/0tlzaqwPQCULLanv3DMIlu96KTJR0fM5isWX2UViOqlGnX6YFgqWepcX+XMNg==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 "@rnwonder/simple-datejs@^1.0.4":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@rnwonder/simple-datejs/-/simple-datejs-1.0.8.tgz#a59065decaf1b75ed8fef07d43a561f2d1beddb9"
@@ -824,10 +1197,17 @@
   resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.9.tgz#e5e142fbbfe251091f9c5f1dd4c834ac04c3dbd1"
   integrity sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==
 
+<<<<<<< HEAD
 "@scure/base@~1.2.5":
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.2.6.tgz#ca917184b8231394dd8847509c67a0be522e59f6"
   integrity sha512-g/nm5FgUa//MCj1gV09zTJTaM6KBAHqLN907YVQqf7zC49+DcO4B1so4ZX07Ef10Twr6nuqYEH9GEggFXA4Fmg==
+=======
+"@scure/base@~1.2.2", "@scure/base@~1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.2.4.tgz#002eb571a35d69bdb4c214d0995dff76a8dcd2a9"
+  integrity sha512-5Yy9czTO47mqz+/J8GM6GIId4umdCk1wc1q8rKERQulIoc8VP9pzDcghv10Tl2E7R96ZUx/PhND3ESYUQX8NuQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@scure/bip32@1.3.1":
   version "1.3.1"
@@ -838,6 +1218,7 @@
     "@noble/hashes" "~1.3.1"
     "@scure/base" "~1.1.0"
 
+<<<<<<< HEAD
 "@scure/bip32@^1.3.2", "@scure/bip32@^1.5.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@scure/bip32/-/bip32-1.7.0.tgz#b8683bab172369f988f1589640e53c4606984219"
@@ -846,6 +1227,16 @@
     "@noble/curves" "~1.9.0"
     "@noble/hashes" "~1.8.0"
     "@scure/base" "~1.2.5"
+=======
+"@scure/bip32@^1.3.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@scure/bip32/-/bip32-1.6.2.tgz#093caa94961619927659ed0e711a6e4bf35bffd0"
+  integrity sha512-t96EPDMbtGgtb7onKKqxRLfE5g05k7uHnHRM2xdE6BP/ZmxaLtPek4J4KfVn/90IQNrU1IOAqMgiDtUdtbe3nw==
+  dependencies:
+    "@noble/curves" "~1.8.1"
+    "@noble/hashes" "~1.7.1"
+    "@scure/base" "~1.2.2"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@scure/bip39@1.2.1":
   version "1.2.1"
@@ -856,12 +1247,21 @@
     "@scure/base" "~1.1.0"
 
 "@scure/bip39@^1.2.1":
+<<<<<<< HEAD
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@scure/bip39/-/bip39-1.6.0.tgz#475970ace440d7be87a6086cbee77cb8f1a684f9"
   integrity sha512-+lF0BbLiJNwVlev4eKelw1WWLaiKXw7sSl8T6FvBlWkdX+94aGJ4o8XjUdlyhTCjd8c+B3KT3JfS8P0bLRNU6A==
   dependencies:
     "@noble/hashes" "~1.8.0"
     "@scure/base" "~1.2.5"
+=======
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@scure/bip39/-/bip39-1.5.4.tgz#07fd920423aa671be4540d59bdd344cc1461db51"
+  integrity sha512-TFM4ni0vKvCfBpohoh+/lY05i9gRbSwXWngAsF4CABQxoaOHijxuaZ2R6cStDQ5CHtHO9aGJTr4ksVJASRRyMA==
+  dependencies:
+    "@noble/hashes" "~1.7.1"
+    "@scure/base" "~1.2.4"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@sindresorhus/is@^4.6.0":
   version "4.6.0"
@@ -883,6 +1283,7 @@
   dependencies:
     escape-string-regexp "^5.0.0"
 
+<<<<<<< HEAD
 "@solid-primitives/event-listener@^2.2.14", "@solid-primitives/event-listener@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@solid-primitives/event-listener/-/event-listener-2.4.1.tgz#d71b068bad49f0cbf06ca3ae6869b4ea2a84a9b9"
@@ -894,6 +1295,19 @@
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@solid-primitives/keyed/-/keyed-1.5.1.tgz#7d360230de1ba904d1c8a8c0db040e47e660de2f"
   integrity sha512-lAgQ1Jou8nxywifWsWjDTla9MI7Pfr46JRTC40K81fqz8dw4E8t/4gYuIwqP1EHVG0mItfIb3XqDw0wEQh+QYA==
+=======
+"@solid-primitives/event-listener@^2.2.14", "@solid-primitives/event-listener@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/event-listener/-/event-listener-2.4.0.tgz#bf35a73111d22b91b3d12d37b953fc9aa86e7bd3"
+  integrity sha512-TSfR1PNTfojFEYGSxSMCnUhXsaYWBo4p+cm73QmWODa9YnaQAk6PB7VjzG2bOT2D817VlvuOqTj0Qdq+MZrdGg==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/keyed@^1.2.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/keyed/-/keyed-1.5.0.tgz#3669110f665396fe99a6f33ee1ab2012276990f1"
+  integrity sha512-g04CXywgWG/7L4sTxQP6q1gdiirItVBq6ZO9YuLTqPFlkX3uD4IEjeL9cLHP6waahrnO8yL3OZl64pcKGYN5Qw==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@solid-primitives/map@^0.4.7":
   version "0.4.13"
@@ -903,6 +1317,7 @@
     "@solid-primitives/trigger" "^1.1.0"
 
 "@solid-primitives/media@^2.2.4":
+<<<<<<< HEAD
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@solid-primitives/media/-/media-2.3.1.tgz#12b99f966b89d72b0e1a2654a2bc7708de484142"
   integrity sha512-UTX8LAaQS7k3rvekme8y5ihOrt5SJpgkw7xyUySlPhIapD7JxlhYncQoSFsys5D1XPCgI/3snobpvbanRcrTAw==
@@ -966,6 +1381,61 @@
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@solid-primitives/utils/-/utils-6.3.1.tgz#d6fcffdadf885e731b459f05a563d8c1ac0c5a4d"
   integrity sha512-4/Z59nnwu4MPR//zWZmZm2yftx24jMqQ8CSd/JobL26TPfbn4Ph8GKNVJfGJWShg1QB98qObJSskqizbTvcLLA==
+=======
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/media/-/media-2.3.0.tgz#89608a61d048ffa27882a63182f31725bf551553"
+  integrity sha512-7+C3wfbWnGE/WPoNsqcp/EeOP2aNNB92RCpsWhBth8E5lZo/J+rK6jMb7umVsK0zguT8HBpeXp1pFyFbcsHStA==
+  dependencies:
+    "@solid-primitives/event-listener" "^2.4.0"
+    "@solid-primitives/rootless" "^1.5.0"
+    "@solid-primitives/static-store" "^0.1.0"
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/props@^3.1.8":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/props/-/props-3.2.0.tgz#4d59627333d92b382f239865cc62885b3bfc8cba"
+  integrity sha512-vEg5yERdXftJz2+A6B0IMYTrPL9SE2DPmpURV/nZyqQ+PXziF02V4b4SDr6JX3jNJxBlY6c17LqwYEw+bIfGRg==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/refs@^1.0.5":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/refs/-/refs-1.1.0.tgz#1b6502ee9661268ef997754a8f8394b766b53643"
+  integrity sha512-QJ3bTSQOlPdHBP2m6llrT13FvVzAwZfx41lTN8lQrRwwcZoWb7kfCAjhaohPnwkAsQ6nJpLjtGfT5GOyuCA4tA==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/rootless@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/rootless/-/rootless-1.5.0.tgz#8011c94a7510f544af6c9e526a2c01b4a7c12ecd"
+  integrity sha512-YJ+EveQeDv9DLqfDKfsPAAGy2x3vBruoD23yn+nD2dT84QjoBxWT1T0qA0TMFjek6/xuN3flqnHtQ4r++4zdjg==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/static-store@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/static-store/-/static-store-0.1.0.tgz#34588f47310d333109127b2ed49c14b3b0bbe2c6"
+  integrity sha512-6Coau0Kv/dF83UQpbBzc+gnJafOQAPe2jCbB4jmTK5UocsR5cWmFBVRm3kin+nZFVaO4WkuELw0cKANWgTVh8Q==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/transition-group@^1.0.2":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/transition-group/-/transition-group-1.1.0.tgz#a18e92155ba31b638971fbc1e736932623c6d07d"
+  integrity sha512-pL1sEPCHuC4V+Yh+SQsKSPuGDYrZbLJYSkk3AB4TZrWhptEJUS0IHoi7BAynYcMiULbvMMVKFbeFHqINZq0+ig==
+
+"@solid-primitives/trigger@^1.1.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/trigger/-/trigger-1.2.0.tgz#7821ca5311b060a41507c6ed73b23a3ff4e18b39"
+  integrity sha512-sW4/3cDXSjYQampn8CIFZ11BlxgNf2li8r2fXnb3b3YWE6RdZZCl8PhvpPF38Gzl0CnryrbTPJWM7OIkseCDgQ==
+  dependencies:
+    "@solid-primitives/utils" "^6.3.0"
+
+"@solid-primitives/utils@^6.2.1", "@solid-primitives/utils@^6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/utils/-/utils-6.3.0.tgz#5659e9788e8fe385c75c78c2f12a5e7bcc9f448d"
+  integrity sha512-e7hTlJ1Ywh2+g/Qug+n4L1mpfxsikoIS4/sHE2EK9WatQt8UJqop/vE6bsLnXlU1xuhb/jo94Ah5Y27rd4wP7A==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 "@solidjs/router@0.14.10":
   version "0.14.10"
@@ -973,6 +1443,7 @@
   integrity sha512-5B8LVgvvXijfXyXWPVLUm7RQ05BhjIpAyRkYVDZtrR3OaSvftXobWc6qSEwk4ICLoGi/IE9CUp2LUdCBIs9AXg==
 
 "@swc/helpers@^0.5.0":
+<<<<<<< HEAD
   version "0.5.17"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.17.tgz#5a7be95ac0f0bf186e7e6e890e7a6f6cda6ce971"
   integrity sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==
@@ -980,10 +1451,20 @@
     tslib "^2.8.0"
 
 "@thisbeyond/solid-select@0.13.0":
+=======
+  version "0.5.15"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.15.tgz#79efab344c5819ecf83a43f3f9f811fc84b516d7"
+  integrity sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==
+  dependencies:
+    tslib "^2.8.0"
+
+"@thisbeyond/solid-select@^0.13.0":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/@thisbeyond/solid-select/-/solid-select-0.13.0.tgz#eadda942bd85929c89d97c198c398ffd4da8a9f5"
   integrity sha512-eION+Xf8TGLs1NZrvRo1NRKOl4plYMbY7UswHhh5bEUY8oMltjrBhUWF0hzaFViEc1zZpkCQyafaD89iofG6Tg==
 
+<<<<<<< HEAD
 "@tiptap/core@^2.12.0", "@tiptap/core@^2.5.9":
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/@tiptap/core/-/core-2.12.0.tgz#e0bc9255865db53682e83d843c8fef19596a8899"
@@ -1185,6 +1666,9 @@
     "@tiptap/pm" "^2.12.0"
 
 "@types/babel__core@^7.1.20":
+=======
+"@types/babel__core@^7.20.4":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"
   integrity sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==
@@ -1196,9 +1680,15 @@
     "@types/babel__traverse" "*"
 
 "@types/babel__generator@*":
+<<<<<<< HEAD
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@types/babel__generator/-/babel__generator-7.27.0.tgz#b5819294c51179957afaec341442f9341e4108a9"
   integrity sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg==
+=======
+  version "7.6.8"
+  resolved "https://registry.yarnpkg.com/@types/babel__generator/-/babel__generator-7.6.8.tgz#f836c61f48b1346e7d2b0d93c6dacc5b9535d3ab"
+  integrity sha512-ASsj+tpEDsEiFr1arWrlN6V3mdfjRMZt6LtK/Vp/kreFLnr5QH5+DhvD5nINYZXzwJvXeGq+05iUXcAzVrqWtw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@babel/types" "^7.0.0"
 
@@ -1211,6 +1701,7 @@
     "@babel/types" "^7.0.0"
 
 "@types/babel__traverse@*":
+<<<<<<< HEAD
   version "7.20.7"
   resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.20.7.tgz#968cdc2366ec3da159f61166428ee40f370e56c2"
   integrity sha512-dkO5fhS7+/oos4ciWxyEyjWe48zmG6wbCheo/G2ZnHx4fs3EU6YC6UM8rk56gAjNJ9P3MTH2jo5jb92/K6wbng==
@@ -1218,6 +1709,15 @@
     "@babel/types" "^7.20.7"
 
 "@types/d3-format@3.0.4":
+=======
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/@types/babel__traverse/-/babel__traverse-7.20.6.tgz#8dc9f0ae0f202c08d8d4dab648912c8d6038e3f7"
+  integrity sha512-r1bzfrm0tomOI8g1SzvCaQHo6Lcv6zu0EA+W2kHrt8dyrHQxGzBBL4kdkzIS+jBMV+EYcMAEAqXqYaLJq5rOZg==
+  dependencies:
+    "@babel/types" "^7.20.7"
+
+"@types/d3-format@^3.0.4":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@types/d3-format/-/d3-format-3.0.4.tgz#b1e4465644ddb3fdf3a263febb240a6cd616de90"
   integrity sha512-fALi2aI6shfg7vM5KiR1wNJnZ7r6UuggVqtDA+xiEdPZQwy/trcQaHnwShLuLdta2rTymCNpxYTiMZX/e09F4g==
@@ -1243,11 +1743,14 @@
   dependencies:
     "@types/unist" "*"
 
+<<<<<<< HEAD
 "@types/linkify-it@^3":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@types/linkify-it/-/linkify-it-3.0.5.tgz#1e78a3ac2428e6d7e6c05c1665c242023a4601d8"
   integrity sha512-yg6E+u0/+Zjva+buc3EIb+29XEg4wltq7cSmd4Uc2EE/1nUVmxyzpX6gUXD0V8jIrG0r7YeOGVIbYRkxeooCtw==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 "@types/linkify-it@^5":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@types/linkify-it/-/linkify-it-5.0.0.tgz#21413001973106cda1c3a9b91eedd4ccd5469d76"
@@ -1261,6 +1764,7 @@
     "@types/lodash" "*"
 
 "@types/lodash@*":
+<<<<<<< HEAD
   version "4.17.17"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.17.tgz#fb85a04f47e9e4da888384feead0de05f7070355"
   integrity sha512-RRVJ+J3J+WmyOTqnz3PiBLA501eKwXl2noseKOrNo/6+XEHjTAxO4xHvxQB6QuNm+s4WRbn6rSiap8+EA+ykFQ==
@@ -1274,6 +1778,34 @@
     "@types/mdurl" "^1"
 
 "@types/markdown-it@^14.0.0":
+=======
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.15.tgz#12d4af0ed17cc7600ce1f9980cec48fc17ad1e89"
+  integrity sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==
+
+"@types/markdown-it-container@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@types/markdown-it-container/-/markdown-it-container-2.0.10.tgz#4cd7593fd96f173ebcc78c0e6b399c9d8bc7d7a7"
+  integrity sha512-zv+YxrlSYRq51e9kzm3orv4OvF4U79Ll1OyplNXr00o4ZC/8PukJk/jEWH7CnsMtrSWZlyv0czhz42jm9J4uLw==
+  dependencies:
+    "@types/markdown-it" "*"
+
+"@types/markdown-it-emoji@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/markdown-it-emoji/-/markdown-it-emoji-3.0.1.tgz#035d4d38110113ea0ce911f06bc2c2b03ca1ad42"
+  integrity sha512-cz1j8R35XivBqq9mwnsrP2fsz2yicLhB8+PDtuVkKOExwEdsVBNI+ROL3sbhtR5occRZ66vT0QnwFZCqdjf3pA==
+  dependencies:
+    "@types/markdown-it" "^14"
+
+"@types/markdown-it-footnote@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/markdown-it-footnote/-/markdown-it-footnote-3.0.4.tgz#01990957087002d61c46154e26fa3ea54166beb0"
+  integrity sha512-XJ6n+v+2u+2gmYLSHcxyoNT/YrgrKvHuDJQlykFjuxCQCr86P2/fx1V6/0lcKxv5cSIlCaJ6sUcNS3zDI7I+LA==
+  dependencies:
+    "@types/markdown-it" "*"
+
+"@types/markdown-it@*", "@types/markdown-it@^14", "@types/markdown-it@^14.1.1":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "14.1.2"
   resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-14.1.2.tgz#57f2532a0800067d9b934f3521429a2e8bfb4c61"
   integrity sha512-promo4eFwuiW+TfGxhi+0x3czqTYJkG8qB17ZUJiVF10Xm7NLVRSLUsfRTU/6h1e24VvRnXCx+hG7li58lkzog==
@@ -1281,18 +1813,25 @@
     "@types/linkify-it" "^5"
     "@types/mdurl" "^2"
 
+<<<<<<< HEAD
 "@types/mdast@^4.0.0", "@types/mdast@^4.0.2":
+=======
+"@types/mdast@^4.0.0", "@types/mdast@^4.0.4":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-4.0.4.tgz#7ccf72edd2f1aa7dd3437e180c64373585804dd6"
   integrity sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==
   dependencies:
     "@types/unist" "*"
 
+<<<<<<< HEAD
 "@types/mdurl@^1":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-1.0.5.tgz#3e0d2db570e9fb6ccb2dc8fde0be1d79ac810d39"
   integrity sha512-6L6VymKTzYSrEf4Nev4Xa1LCHKrlTlYCBMTlQKFuddo1CvQcE52I0mwfOJayueUC7MJuXOeHTcIU683lzd0cUA==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 "@types/mdurl@^2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-2.0.0.tgz#d43878b5b20222682163ae6f897b20447233bdfd"
@@ -1303,6 +1842,7 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-2.1.0.tgz#052aa67a48eccc4309d7f0191b7e41434b90bb78"
   integrity sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==
 
+<<<<<<< HEAD
 "@types/node-emoji@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@types/node-emoji/-/node-emoji-2.1.0.tgz#adbb238f377bea16f014279ee7e32bb9ae26bd41"
@@ -1311,6 +1851,9 @@
     node-emoji "*"
 
 "@types/pako@2.0.3":
+=======
+"@types/pako@^2.0.3":
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/pako/-/pako-2.0.3.tgz#b6993334f3af27c158f3fe0dfeeba987c578afb1"
   integrity sha512-bq0hMV9opAcrmE0Byyo0fY3Ew4tgOevJmQ9grUhpXQhYfyLJ1Kqg3P33JT5fdbT2AjeAjR51zqqVjAL/HMkx7Q==
@@ -1348,10 +1891,17 @@ argparse@^2.0.1:
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
+<<<<<<< HEAD
 babel-plugin-jsx-dom-expressions@^0.39.8:
   version "0.39.8"
   resolved "https://registry.yarnpkg.com/babel-plugin-jsx-dom-expressions/-/babel-plugin-jsx-dom-expressions-0.39.8.tgz#e4baa0e6af6b53ecb7d34e9ca7f5ddfc8eafd63d"
   integrity sha512-/MVOIIjonylDXnrWmG23ZX82m9mtKATsVHB7zYlPfDR9Vdd/NBE48if+wv27bSkBtyO7EPMUlcUc4J63QwuACQ==
+=======
+babel-plugin-jsx-dom-expressions@^0.39.3:
+  version "0.39.6"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jsx-dom-expressions/-/babel-plugin-jsx-dom-expressions-0.39.6.tgz#bc74d9c1294130f00a4134b20da4f6e27c687529"
+  integrity sha512-HMkTn5A3NyydEgG7HKmm48YcnsQQyqeT6SKNWh2TrS6nn5rOLeHDfg5hPbrRUCFUqaT9WGn5NInQfMc3qne3Dg==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@babel/helper-module-imports" "7.18.6"
     "@babel/plugin-syntax-jsx" "^7.18.6"
@@ -1360,12 +1910,21 @@ babel-plugin-jsx-dom-expressions@^0.39.8:
     parse5 "^7.1.2"
     validate-html-nesting "^1.2.1"
 
+<<<<<<< HEAD
 babel-preset-solid@^1.7.2:
   version "1.9.6"
   resolved "https://registry.yarnpkg.com/babel-preset-solid/-/babel-preset-solid-1.9.6.tgz#3dd54db9bfc7a85dc1d31c1e88b49fefa0dce8fc"
   integrity sha512-HXTK9f93QxoH8dYn1M2mJdOlWgMsR88Lg/ul6QCZGkNTktjTE5HAf93YxQumHoCudLEtZrU1cFCMFOVho6GqFg==
   dependencies:
     babel-plugin-jsx-dom-expressions "^0.39.8"
+=======
+babel-preset-solid@^1.8.4:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/babel-preset-solid/-/babel-preset-solid-1.9.3.tgz#502dfc75b535e6bcefb5866addc1bb35d2755bab"
+  integrity sha512-jvlx5wDp8s+bEF9sGFw/84SInXOA51ttkUEroQziKMbxplXThVKt83qB6bDTa1HuLNatdU9FHpFOiQWs1tLQIg==
+  dependencies:
+    babel-plugin-jsx-dom-expressions "^0.39.3"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 bail@^2.0.0:
   version "2.0.2"
@@ -1377,11 +1936,14 @@ base64-js@^1.3.1:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
+<<<<<<< HEAD
 bcp-47-match@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/bcp-47-match/-/bcp-47-match-2.0.3.tgz#603226f6e5d3914a581408be33b28a53144b09d0"
   integrity sha512-JtTezzbAibu8G0R9op9zb3vcWZd9JF6M0xOYGPn0fNCd7wOpRB1mU2mH9T8gaBGbAAyIIVgB2G7xG0GP98zMAQ==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 bech32@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/bech32/-/bech32-1.1.4.tgz#e38c9f37bf179b8eb16ae3a772b40c356d4832e9"
@@ -1392,6 +1954,7 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.3.0.tgz#f6e14a97858d327252200242d4ccfe522c445522"
   integrity sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==
 
+<<<<<<< HEAD
 blossom-client-sdk@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/blossom-client-sdk/-/blossom-client-sdk-3.0.1.tgz#0ae47e1d9584ea9a3ce0cb65025bb2ebdc159268"
@@ -1409,6 +1972,12 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
+=======
+bn.js@^4.11.8:
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.1.tgz#215741fe3c9dba2d7e12c001d0cfdbae43975ba7"
+  integrity sha512-k8TVBiPkPJT9uHLdOKfFpqcfprwBFOAAXXozRubr7R7PfIuKvQlzcI4M0pALeqXN09vdaMbUdUj+pass+uULAg==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 braces@~3.0.2:
   version "3.0.3"
@@ -1418,6 +1987,7 @@ braces@~3.0.2:
     fill-range "^7.1.1"
 
 browserslist@^4.24.0:
+<<<<<<< HEAD
   version "4.25.0"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.25.0.tgz#986aa9c6d87916885da2b50d8eb577ac8d133b2c"
   integrity sha512-PJ8gYKeS5e/whHBh8xrwYK+dAvEj7JXtz6uTucnMRB8OiGTsKccFekoRrjajPBHV8oOY+2tI4uxeceSimKwMFA==
@@ -1426,6 +1996,16 @@ browserslist@^4.24.0:
     electron-to-chromium "^1.5.160"
     node-releases "^2.0.19"
     update-browserslist-db "^1.1.3"
+=======
+  version "4.24.4"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.24.4.tgz#c6b2865a3f08bcb860a0e827389003b9fe686e4b"
+  integrity sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==
+  dependencies:
+    caniuse-lite "^1.0.30001688"
+    electron-to-chromium "^1.5.73"
+    node-releases "^2.0.19"
+    update-browserslist-db "^1.1.1"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 buffer@^6.0.3:
   version "6.0.3"
@@ -1435,10 +2015,17 @@ buffer@^6.0.3:
     base64-js "^1.3.1"
     ieee754 "^1.2.1"
 
+<<<<<<< HEAD
 caniuse-lite@^1.0.30001718:
   version "1.0.30001720"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001720.tgz#c138cb6026d362be9d8d7b0e4bcd0183a850edfd"
   integrity sha512-Ec/2yV2nNPwb4DnTANEV99ZWwm3ZWfdlfkQbWSDDt+PsXEVYwlhPH8tdMaPunYTKKmz7AnHi2oNEi1GcmKCD8g==
+=======
+caniuse-lite@^1.0.30001688:
+  version "1.0.30001697"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001697.tgz#040bbbb54463c4b4b3377c716b34a322d16e6fc7"
+  integrity sha512-GwNPlWJin8E+d7Gxq96jxM6w0w+VFeyyXRsjU58emtkYqnbwHqXm5uT2uCmO0RQE9htWknOP4xtBlLmM/gWxvQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 ccount@^2.0.0:
   version "2.0.1"
@@ -1490,12 +2077,16 @@ clsx@^2.0.0:
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
   integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
 
+<<<<<<< HEAD
 collapse-white-space@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-2.1.0.tgz#640257174f9f42c740b40f3b55ee752924feefca"
   integrity sha512-loKTxY1zCOuG4j9f6EPnuyyYkf58RnhhWTvRoZEokgB+WbdXehfjFviyOVYkqzEWz1Q5kRiZdBYS5SwxbQYwzw==
 
 comma-separated-tokens@^2.0.0:
+=======
+comma-separated-tokens@^2.0.3:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz#4e89c9458acb61bc8fef19f4529973b2392839ee"
   integrity sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==
@@ -1505,6 +2096,7 @@ convert-source-map@^2.0.0:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-2.0.0.tgz#4b560f649fc4e918dd0ab75cf4961e8bc882d82a"
   integrity sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==
 
+<<<<<<< HEAD
 crelt@^1.0.0:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/crelt/-/crelt-1.0.6.tgz#7cc898ea74e190fb6ef9dae57f8f81cf7302df72"
@@ -1515,16 +2107,23 @@ css-selector-parser@^3.0.0:
   resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-3.1.2.tgz#181106cc2acc9fa74f0dbd6860c3305202284c81"
   integrity sha512-WfUcL99xWDs7b3eZPoRszWVfbNo8ErCF15PTvVROjkShGlAfjIkG6hlfj/sl6/rfo5Q9x9ryJ3VqVnAZDA+gcw==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 csstype@^3.1.0:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
+<<<<<<< HEAD
 d3-format@3.1.0:
+=======
+d3-format@^3.1.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-3.1.0.tgz#9260e23a28ea5cb109e93b21a06e24e2ebd55641"
   integrity sha512-YyUI6AEuY/Wpt8KWLgZHsIU86atmikuoOmCfommt0LYHiQSPjvX2AcFc38PX0CBpr2RCyZhjex+NS/LPOv6YqA==
 
+<<<<<<< HEAD
 dayjs@1.11.11:
   version "1.11.11"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.11.tgz#dfe0e9d54c5f8b68ccf8ca5f72ac603e7e5ed59e"
@@ -1534,13 +2133,30 @@ debug@^4.0.0, debug@^4.1.0, debug@^4.3.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.1.tgz#e5a8bc6cbc4c6cd3e64308b0693a3d4fa550189b"
   integrity sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==
+=======
+dayjs@^1.11.11:
+  version "1.11.13"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.13.tgz#92430b0139055c3ebb60150aa13e860a4b5a366c"
+  integrity sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==
+
+debug@^4.0.0, debug@^4.1.0, debug@^4.3.1:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.0.tgz#2b3f2aea2ffeb776477460267377dc8710faba8a"
+  integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     ms "^2.1.3"
 
 decode-named-character-reference@^1.0.0:
+<<<<<<< HEAD
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/decode-named-character-reference/-/decode-named-character-reference-1.1.0.tgz#5d6ce68792808901210dac42a8e9853511e2b8bf"
   integrity sha512-Wy+JTSbFThEOXQIR2L6mxJvEs+veIzpmqD7ynWxMXGpnk3smkHQOp6forLdHsKpAMW9iJpaBBIxz285t1n1C3w==
+=======
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/decode-named-character-reference/-/decode-named-character-reference-1.0.2.tgz#daabac9690874c394c81e4162a0304b35d824f0e"
+  integrity sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     character-entities "^2.0.0"
 
@@ -1556,20 +2172,30 @@ devlop@^1.0.0, devlop@^1.1.0:
   dependencies:
     dequal "^2.0.0"
 
+<<<<<<< HEAD
 direction@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/direction/-/direction-2.0.1.tgz#71800dd3c4fa102406502905d3866e65bdebb985"
   integrity sha512-9S6m9Sukh1cZNknO1CWAr2QAWsbKLafQiyM5gZ7VgXHeuaoUwffKN4q6NC4A/Mf9iiPlOXQEKW/Mv/mh9/3YFA==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 dompurify@3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.0.5.tgz#eb3d9cfa10037b6e73f32c586682c4b2ab01fbed"
   integrity sha512-F9e6wPGtY+8KNMRAVfxeCOHU0/NPWMSENNq4pQctuXRqqdEPW7q3CrLbR5Nse044WwacyjHGOMlvNsBe1y6z9A==
 
+<<<<<<< HEAD
 electron-to-chromium@^1.5.160:
   version "1.5.162"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.162.tgz#5305c15292a960f36e86f8b330da958f8ae1690d"
   integrity sha512-hQA+Zb5QQwoSaXJWEAGEw1zhk//O7qDzib05Z4qTqZfNju/FAkrm5ZInp0JbTp4Z18A6bilopdZWEYrFSsfllA==
+=======
+electron-to-chromium@^1.5.73:
+  version "1.5.91"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.91.tgz#cf5567f6853062493242133aefd4dc8dc8440abd"
+  integrity sha512-sNSHHyq048PFmZY4S90ax61q+gLCs0X0YmcOII9wG9S2XwbVr+h4VW2wWhnbp/Eys3cCwTxVF292W3qPaxIapQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 emoji-regex@^10.0.0:
   version "10.4.0"
@@ -1591,16 +2217,23 @@ emoticon@^4.0.1:
   resolved "https://registry.yarnpkg.com/emoticon/-/emoticon-4.1.0.tgz#d5a156868ee173095627a33de3f1e914c3dde79e"
   integrity sha512-VWZfnxqwNcc51hIy/sbOdEem6D+cVtpPzEEtVAFdaas30+1dgkyaOQ4sQ6Bp0tOMqWO1v+HQfYaoodOkdhK6SQ==
 
+<<<<<<< HEAD
 entities@^4.4.0:
+=======
+entities@^4.4.0, entities@^4.5.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-4.5.0.tgz#5d268ea5e7113ec74c4d033b79ea5a35a488fb48"
   integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
 
+<<<<<<< HEAD
 entities@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-6.0.0.tgz#09c9e29cb79b0a6459a9b9db9efb418ac5bb8e51"
   integrity sha512-aKstq2TDOndCn4diEyp9Uq/Flu2i1GlLkc6XIDQSDMuaFE3OPW5OphLCyQ5SpSJZTb4reN+kTcYru5yIfXoRPw==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 esbuild@^0.18.10:
   version "0.18.20"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.18.20.tgz#4709f5a34801b43b799ab7d6d82f7284a9b7a7a6"
@@ -1634,11 +2267,14 @@ escalade@^3.2.0:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.2.0.tgz#011a3f69856ba189dffa7dc8fcce99d2a87903e5"
   integrity sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==
 
+<<<<<<< HEAD
 escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 escape-string-regexp@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
@@ -1670,10 +2306,17 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
+<<<<<<< HEAD
 fuse.js@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-7.0.0.tgz#6573c9fcd4c8268e403b4fc7d7131ffcf99a9eb2"
   integrity sha512-14F4hBIxqKvD4Zz/XjDc3y94mNZN6pRv3U13Udo0lNLCWRBUsrMv2xwcF/y/Z5sV6+FQW+/ow68cHpm4sunt8Q==
+=======
+fuse.js@^7.0.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-7.1.0.tgz#306228b4befeee11e05b027087c2744158527d09"
+  integrity sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
@@ -1697,6 +2340,7 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
+<<<<<<< HEAD
 hast-util-embedded@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-embedded/-/hast-util-embedded-3.0.0.tgz#be4477780fbbe079cdba22982e357a0de4ba853e"
@@ -1910,17 +2554,26 @@ highlight.js@11.9.0:
   version "11.9.0"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.9.0.tgz#04ab9ee43b52a41a047432c8103e2158a1b8b5b0"
   integrity sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==
+=======
+highlight.js@^11.9.0:
+  version "11.11.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.11.1.tgz#fca06fa0e5aeecf6c4d437239135fabc15213585"
+  integrity sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 html-entities@2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.3.3.tgz#117d7626bece327fc8baace8868fa6f5ef856e46"
   integrity sha512-DV5Ln36z34NNTDgnz0EWGBLZENelNAtkiFA4kyNOG2tDI6Mz1uSWiq1wAKdyjnJwyDiDO7Fa2SO1CTxPXL8VxA==
 
+<<<<<<< HEAD
 html-void-elements@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-3.0.0.tgz#fc9dbd84af9e747249034d4d62602def6517f1d7"
   integrity sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -1931,6 +2584,14 @@ immutable@^4.0.0:
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.7.tgz#c70145fc90d89fb02021e65c84eb0226e4e5a381"
   integrity sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==
 
+<<<<<<< HEAD
+=======
+inline-style-parser@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
+  integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
+
+>>>>>>> 43be1874 (Update layout login for MW login)
 intl-messageformat@10.7.7:
   version "10.7.7"
   resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-10.7.7.tgz#42085e1664729d02240a03346e31a2540b1112a0"
@@ -1993,11 +2654,14 @@ is-plain-obj@^4.0.0:
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-4.1.0.tgz#d65025edec3657ce032fd7db63c97883eaed71f0"
   integrity sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==
 
+<<<<<<< HEAD
 is-url@^1.0.0:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/is-url/-/is-url-1.2.4.tgz#04a4df46d28c4cff3d73d01ff06abeb318a1aa52"
   integrity sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 is-what@^4.1.8:
   version "4.1.16"
   resolved "https://registry.yarnpkg.com/is-what/-/is-what-4.1.16.tgz#1ad860a19da8b4895ad5495da3182ce2acdd7a6f"
@@ -2034,10 +2698,17 @@ jsonfile@^5.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+<<<<<<< HEAD
 light-bolt11-decoder@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/light-bolt11-decoder/-/light-bolt11-decoder-3.1.1.tgz#2b0d33257026ed2a4678c0980a01dcf827bcb928"
   integrity sha512-sLg/KCwYkgsHWkefWd6KqpCHrLFWWaXTOX3cf6yD2hAzL0SLpX+lFcaFK2spkjbgzG6hhijKfORDc9WoUHwX0A==
+=======
+light-bolt11-decoder@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/light-bolt11-decoder/-/light-bolt11-decoder-3.2.0.tgz#2d48f78386cde526c4131db8f9dfd3250a2d5d4d"
+  integrity sha512-3QEofgiBOP4Ehs9BI+RkZdXZNtSys0nsJ6fyGeSiAGCBsMwHGUDS/JQlY/sTnWs91A2Nh0S9XXfA8Sy9g6QpuQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@scure/base" "1.1.1"
 
@@ -2048,11 +2719,14 @@ linkify-it@^5.0.0:
   dependencies:
     uc.micro "^2.0.0"
 
+<<<<<<< HEAD
 linkifyjs@^4.2.0:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-4.3.1.tgz#1f246ebf4be040002accd1f4535b6af7c7e37898"
   integrity sha512-DRSlB9DKVW04c4SUdGvKK5FR6be45lTU9M76JnngqPeeGDqPwYc0zdUErtsNVMtxPXgUWV4HbXbnC4sNyBxkYg==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -2070,12 +2744,61 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+<<<<<<< HEAD
 markdown-it-task-lists@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/markdown-it-task-lists/-/markdown-it-task-lists-2.1.1.tgz#f68f4d2ac2bad5a2c373ba93081a1a6848417088"
   integrity sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==
 
 markdown-it@^14.0.0, markdown-it@^14.1.0:
+=======
+markdown-it-abbr@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-abbr/-/markdown-it-abbr-2.0.0.tgz#aa01d8ff23ebf672f9a7db02a974e59254ce7acb"
+  integrity sha512-of7C8pXSjXjDojW4neNP+jD7inUYH/DO0Ca+K/4FUEccg0oHAEX/nfscw0jfz66PJbYWOAT9U8mjO21X5p6aAw==
+
+markdown-it-container@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-4.0.0.tgz#3912394f7da6e8ef3b43a0f58b1d0ded851f2a38"
+  integrity sha512-HaNccxUH0l7BNGYbFbjmGpf5aLHAMTinqRZQAEQbMr2cdD3z91Q6kIo1oUn1CQndkT03jat6ckrdRYuwwqLlQw==
+
+markdown-it-deflist@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-deflist/-/markdown-it-deflist-3.0.0.tgz#f2beb0b308beae5a62f62cca7fde0de48dcbe3de"
+  integrity sha512-OxPmQ/keJZwbubjiQWOvKLHwpV2wZ5I3Smc81OjhwbfJsjdRrvD5aLTQxmZzzePeO0kbGzAo3Krk4QLgA8PWLg==
+
+markdown-it-emoji@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-3.0.0.tgz#8475a04d671d7c93f931b76fb90c582768b7f0b5"
+  integrity sha512-+rUD93bXHubA4arpEZO3q80so0qgoFJEKRkRbjKX8RTdca89v2kfyF+xR3i2sQTwql9tpPZPOQN5B+PunspXRg==
+
+markdown-it-footnote@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-footnote/-/markdown-it-footnote-4.0.0.tgz#02ede0cb68a42d7e7774c3abdc72d77aaa24c531"
+  integrity sha512-WYJ7urf+khJYl3DqofQpYfEYkZKbmXmwxQV8c8mO/hGIhgZ1wOe7R4HLFNwqx7TjILbnC98fuyeSsin19JdFcQ==
+
+markdown-it-ins@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-ins/-/markdown-it-ins-4.0.0.tgz#f4c805e6ba911f12793c0f99af3ebfda8f19021b"
+  integrity sha512-sWbjK2DprrkINE4oYDhHdCijGT+MIDhEupjSHLXe5UXeVr5qmVxs/nTUVtgi0Oh/qtF+QKV0tNWDhQBEPxiMew==
+
+markdown-it-mark@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-mark/-/markdown-it-mark-4.0.0.tgz#c19cbc87d9cb9fd1a495e8fe31b740b6d9ebf8c8"
+  integrity sha512-YLhzaOsU9THO/cal0lUjfMjrqSMPjjyjChYM7oyj4DnyaXEzA8gnW6cVJeyCrCVeyesrY2PlEdUYJSPFYL4Nkg==
+
+markdown-it-sub@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-sub/-/markdown-it-sub-2.0.0.tgz#10f6c7bbf2faacf71ae1a64c75009c40ef9b2c94"
+  integrity sha512-iCBKgwCkfQBRg2vApy9vx1C1Tu6D8XYo8NvevI3OlwzBRmiMtsJ2sXupBgEA7PPxiDwNni3qIUkhZ6j5wofDUA==
+
+markdown-it-sup@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-sup/-/markdown-it-sup-2.0.0.tgz#683b9390929f3024fcd5291799c466ce3d367f44"
+  integrity sha512-5VgmdKlkBd8sgXuoDoxMpiU+BiEt3I49GItBzzw7Mxq9CxvnhE/k09HFli09zgfFDRixDQDfDxi0mgBCXtaTvA==
+
+markdown-it@^14.1.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "14.1.0"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-14.1.0.tgz#3c3c5992883c633db4714ccb4d7b5935d98b7d45"
   integrity sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==
@@ -2164,9 +2887,15 @@ mdast-util-gfm-autolink-literal@^2.0.0:
     micromark-util-character "^2.0.0"
 
 mdast-util-gfm-footnote@^2.0.0:
+<<<<<<< HEAD
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-2.1.0.tgz#7778e9d9ca3df7238cc2bd3fa2b1bf6a65b19403"
   integrity sha512-sqpDWlsHn7Ac9GNZQMeUzPQSMzR6Wv0WKRNvQRg0KqHh02fpTz69Qc1QSseNX29bhz1ROIyNyxExfawVKTm1GQ==
+=======
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-2.0.0.tgz#25a1753c7d16db8bfd53cd84fe50562bd1e6d6a9"
+  integrity sha512-5jOT2boTSVkMnQ7LTrd6n/18kqwjmuYqo7JUPe+tRCY6O7dAuTFMtTPauYYrMPpox9hlN0uOx/FL8XvEfG9/mQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@types/mdast" "^4.0.0"
     devlop "^1.1.0"
@@ -2205,9 +2934,15 @@ mdast-util-gfm-task-list-item@^2.0.0:
     mdast-util-to-markdown "^2.0.0"
 
 mdast-util-gfm@^3.0.0:
+<<<<<<< HEAD
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/mdast-util-gfm/-/mdast-util-gfm-3.1.0.tgz#2cdf63b92c2a331406b0fb0db4c077c1b0331751"
   integrity sha512-0ulfdQOM3ysHhCJ1p06l0b0VKlhU0wuQs3thxZQagjcjPrlFRqY215uZGHHJan9GEAXd9MbfPjFJz+qMkVR6zQ==
+=======
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-gfm/-/mdast-util-gfm-3.0.0.tgz#3f2aecc879785c3cb6a81ff3a243dc11eca61095"
+  integrity sha512-dgQEX5Amaq+DuUqf26jJqSK9qgixgd6rYDHAv4aTBuA92cTknZlKpPfa86Z/s8Dj8xsAQpFfBmPUHWJBWqS4Bw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     mdast-util-from-markdown "^2.0.0"
     mdast-util-gfm-autolink-literal "^2.0.0"
@@ -2272,7 +3007,11 @@ medium-zoom@1.0.8:
   resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.8.tgz#2bd1fbcf2961fa7b0e318fe284462aa9b8608ed2"
   integrity sha512-CjFVuFq/IfrdqesAXfg+hzlDKu6A2n80ZIq0Kl9kWjoHh9j1N9Uvk5X0/MmN0hOfm5F9YBswlClhcwnmtwz7gA==
 
+<<<<<<< HEAD
 merge-anything@^5.1.4:
+=======
+merge-anything@^5.1.7:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-5.1.7.tgz#94f364d2b0cf21ac76067b5120e429353b3525d7"
   integrity sha512-eRtbOb1N5iyH0tkQDAoQ4Ipsp/5qSR79Dzrz8hEPxRX10RWWR/iQXdoKmBSRCThY1Fh5EhISDtpSc93fpxUniQ==
@@ -2280,9 +3019,15 @@ merge-anything@^5.1.4:
     is-what "^4.1.8"
 
 micromark-core-commonmark@^2.0.0:
+<<<<<<< HEAD
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/micromark-core-commonmark/-/micromark-core-commonmark-2.0.3.tgz#c691630e485021a68cf28dbc2b2ca27ebf678cd4"
   integrity sha512-RDBrHEMSxVFLg6xvnXmb1Ayr2WzLAWjeSATAoxwKYJV94TeNavgoIdA0a9ytzDSVzBy2YKFK+emCPOEibLeCrg==
+=======
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/micromark-core-commonmark/-/micromark-core-commonmark-2.0.2.tgz#6a45bbb139e126b3f8b361a10711ccc7c6e15e93"
+  integrity sha512-FKjQKbxd1cibWMM1P9N+H8TwlgGgSkWZMmfuVucLCHaYqeSvJ0hFeHsIa65pA2nYbes0f8LDHPMrd9X7Ujxg9w==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     decode-named-character-reference "^1.0.0"
     devlop "^1.0.0"
@@ -2523,9 +3268,15 @@ micromark-util-sanitize-uri@^2.0.0:
     micromark-util-symbol "^2.0.0"
 
 micromark-util-subtokenize@^2.0.0:
+<<<<<<< HEAD
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/micromark-util-subtokenize/-/micromark-util-subtokenize-2.1.0.tgz#d8ade5ba0f3197a1cf6a2999fbbfe6357a1a19ee"
   integrity sha512-XQLu552iSctvnEcgXw6+Sx75GflAPNED1qx7eBJ+wydBb2KCbRZe+NwvIEEMM83uml1+2WSXpBAcp9IUCgCYWA==
+=======
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/micromark-util-subtokenize/-/micromark-util-subtokenize-2.0.4.tgz#50d8ca981373c717f497dc64a0dbfccce6c03ed2"
+  integrity sha512-N6hXjrin2GTJDe3MVjf5FuXpm12PGm80BrUAeub9XFXca8JZbP+oIwY4LJSVwFUCL1IPm/WwSVUN7goFHmSGGQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     devlop "^1.0.0"
     micromark-util-chunked "^2.0.0"
@@ -2538,6 +3289,7 @@ micromark-util-symbol@^2.0.0:
   integrity sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q==
 
 micromark-util-types@^2.0.0:
+<<<<<<< HEAD
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/micromark-util-types/-/micromark-util-types-2.0.2.tgz#f00225f5f5a0ebc3254f96c36b6605c4b393908e"
   integrity sha512-Yw0ECSpJoViF1qTU4DC6NwtC4aWGt1EkzaQB8KPPyCRR8z9TWeV0HbEFGTO+ZY1wB22zmxnJqhPyTpOVCpeHTA==
@@ -2546,6 +3298,16 @@ micromark@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/micromark/-/micromark-4.0.2.tgz#91395a3e1884a198e62116e33c9c568e39936fdb"
   integrity sha512-zpe98Q6kvavpCr1NPVSCMebCKfD7CA2NqZ+rykeNhONIJBpc1tFKt9hucLGwha3jNTNI8lHpctWJWoimVF4PfA==
+=======
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/micromark-util-types/-/micromark-util-types-2.0.1.tgz#a3edfda3022c6c6b55bfb049ef5b75d70af50709"
+  integrity sha512-534m2WhVTddrcKVepwmVEVnUAmtrx9bfIjNoQHRqfnvdaHQiFytEhJoTgpWJvDEXCO5gLTQh3wYC1PgOJA4NSQ==
+
+micromark@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/micromark/-/micromark-4.0.1.tgz#294c2f12364759e5f9e925a767ae3dfde72223ff"
+  integrity sha512-eBPdkcoCNvYcxQOAKAlceo5SNdzZWfF+FcSupREAzdAh9rRmE239CEQAiTwIgblwnoM8zzj35sZ5ZwvSEOF6Kw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@types/debug" "^4.0.0"
     debug "^4.0.0"
@@ -2570,6 +3332,7 @@ ms@^2.1.3:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
+<<<<<<< HEAD
 nanoid@^3.3.11:
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
@@ -2581,6 +3344,19 @@ nanoid@^5.0.0:
   integrity sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==
 
 node-emoji@*, node-emoji@^2.0.0, node-emoji@^2.1.0:
+=======
+nanoid@^3.3.8:
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.8.tgz#b1be3030bee36aaff18bacb375e5cce521684baf"
+  integrity sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==
+
+nanoid@^5.0.0:
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.0.9.tgz#977dcbaac055430ce7b1e19cf0130cea91a20e50"
+  integrity sha512-Aooyr6MXU6HpvvWXKoVoXwKMs/KyVakWwg7xQfv5/S/RIgJMy0Ifa45H9qqYy7pTCszrHzP21Uk4PZq2HpEM8Q==
+
+node-emoji@^2.1.3:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-2.2.0.tgz#1d000e3c76e462577895be1b436f4aa2d6760eb0"
   integrity sha512-Z3lTE9pLaJF47NyMhd4ww1yFTAP8YhYI8SleJiHzM46Fgpm5cnNzSl9XfzFNqbaz+VlJrIj3fXQ4DeN1Rjm6cw==
@@ -2619,6 +3395,7 @@ nostr-wasm@v0.1.0:
   resolved "https://registry.yarnpkg.com/nostr-wasm/-/nostr-wasm-0.1.0.tgz#17af486745feb2b7dd29503fdd81613a24058d94"
   integrity sha512-78BTryCLcLYv96ONU8Ws3Q1JzjlAt+43pWQhIl86xZmWeegYCNLPml7yQ+gG3vR6V5h4XGj+TxO+SS5dsThQIA==
 
+<<<<<<< HEAD
 nth-check@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.1.1.tgz#c9eab428effce36cd6b92c924bdb000ef1f1ed1d"
@@ -2626,6 +3403,8 @@ nth-check@^2.0.0:
   dependencies:
     boolbase "^1.0.0"
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 orderedmap@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/orderedmap/-/orderedmap-2.1.1.tgz#61481269c44031c449915497bf5a4ad273c512d2"
@@ -2649,12 +3428,21 @@ parse-entities@^4.0.0:
     is-decimal "^2.0.0"
     is-hexadecimal "^2.0.0"
 
+<<<<<<< HEAD
 parse5@^7.0.0, parse5@^7.1.2:
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.3.0.tgz#d7e224fa72399c7a175099f45fc2ad024b05ec05"
   integrity sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw==
   dependencies:
     entities "^6.0.0"
+=======
+parse5@^7.1.2:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.2.1.tgz#8928f55915e6125f430cc44309765bf17556a33a"
+  integrity sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==
+  dependencies:
+    entities "^4.5.0"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 photoswipe-dynamic-caption-plugin@1.2.7:
   version "1.2.7"
@@ -2671,7 +3459,11 @@ photoswipe@5.4.3:
   resolved "https://registry.yarnpkg.com/photoswipe/-/photoswipe-5.4.3.tgz#413670ab08ac062c09f2f8dd645dcd1278afcb4a"
   integrity sha512-9UC6oJBK4oXFZ5HcdlcvGkfEHsVrmE4csUdCQhEjHYb3PvPLO3PG7UhnPuOgjxwmhq5s17Un5NUdum01LgBDng==
 
+<<<<<<< HEAD
 picocolors@^1.1.1:
+=======
+picocolors@^1.0.0, picocolors@^1.1.1:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
@@ -2682,6 +3474,7 @@ picomatch@^2.0.4, picomatch@^2.2.1:
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
 postcss@^8.4.27:
+<<<<<<< HEAD
   version "8.5.4"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.4.tgz#d61014ac00e11d5f58458ed7247d899bd65f99c0"
   integrity sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==
@@ -2691,10 +3484,22 @@ postcss@^8.4.27:
     source-map-js "^1.2.1"
 
 property-information@^6.0.0:
+=======
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.1.tgz#e2272a1f8a807fafa413218245630b5db10a3214"
+  integrity sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==
+  dependencies:
+    nanoid "^3.3.8"
+    picocolors "^1.1.1"
+    source-map-js "^1.2.1"
+
+property-information@^6.3.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/property-information/-/property-information-6.5.0.tgz#6212fbb52ba757e92ef4fb9d657563b933b7ffec"
   integrity sha512-PgTgs/BlvHxOu8QuEN7wi5A0OmXaBcHpmCSTehcs6Uuu9IkDIEo13Hy7n898RHfrQ49vKCoGeWZSaAK01nwVig==
 
+<<<<<<< HEAD
 property-information@^7.0.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/property-information/-/property-information-7.1.0.tgz#b622e8646e02b580205415586b40804d3e8bfd5d"
@@ -2718,15 +3523,34 @@ prosemirror-commands@^1.0.0, prosemirror-commands@^1.5.2, prosemirror-commands@^
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/prosemirror-commands/-/prosemirror-commands-1.7.1.tgz#d101fef85618b1be53d5b99ea17bee5600781b38"
   integrity sha512-rT7qZnQtx5c0/y/KlYaGvtG411S97UaL6gdp6RIZ23DLHanMYLyfGBV5DtSnZdthQql7W+lEVbpSfwtO8T+L2w==
+=======
+prosemirror-changeset@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/prosemirror-changeset/-/prosemirror-changeset-2.2.1.tgz#dae94b63aec618fac7bb9061648e6e2a79988383"
+  integrity sha512-J7msc6wbxB4ekDFj+n9gTW/jav/p53kdlivvuppHsrZXCaQdVgRghoZbSS3kwrRyAstRVQ4/+u5k7YfLgkkQvQ==
+  dependencies:
+    prosemirror-transform "^1.0.0"
+
+prosemirror-commands@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/prosemirror-commands/-/prosemirror-commands-1.6.2.tgz#d9cf6654912442cff47daa1677eb43ebd0b1f117"
+  integrity sha512-0nDHH++qcf/BuPLYvmqZTUUsPJUCPBUXt0J1ErTcDIS369CTp773itzLGIgIXG4LJXOlwYCr44+Mh4ii6MP1QA==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-model "^1.0.0"
     prosemirror-state "^1.0.0"
     prosemirror-transform "^1.10.2"
 
 prosemirror-dropcursor@^1.8.1:
+<<<<<<< HEAD
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/prosemirror-dropcursor/-/prosemirror-dropcursor-1.8.2.tgz#2ed30c4796109ddeb1cf7282372b3850528b7228"
   integrity sha512-CCk6Gyx9+Tt2sbYk5NK0nB1ukHi2ryaRgadV/LvyNuO3ena1payM2z6Cg0vO1ebK8cxbzo41ku2DE5Axj1Zuiw==
+=======
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/prosemirror-dropcursor/-/prosemirror-dropcursor-1.8.1.tgz#49b9fb2f583e0d0f4021ff87db825faa2be2832d"
+  integrity sha512-M30WJdJZLyXHi3N8vxN6Zh5O8ZBbQCz0gURTfPmTIBNQ5pxrdU7A58QkNqfa98YEjSAL1HUyyU34f6Pm5xBSGw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-state "^1.0.0"
     prosemirror-transform "^1.1.0"
@@ -2742,7 +3566,11 @@ prosemirror-gapcursor@^1.3.2:
     prosemirror-state "^1.0.0"
     prosemirror-view "^1.0.0"
 
+<<<<<<< HEAD
 prosemirror-history@^1.0.0, prosemirror-history@^1.3.2, prosemirror-history@^1.4.1:
+=======
+prosemirror-history@^1.4.1:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/prosemirror-history/-/prosemirror-history-1.4.1.tgz#cc370a46fb629e83a33946a0e12612e934ab8b98"
   integrity sha512-2JZD8z2JviJrboD9cPuX/Sv/1ChFng+xh2tChQ2X4bB2HeK+rra/bmJ3xGntCcjhOqIzSDG6Id7e8RJ9QPXLEQ==
@@ -2752,22 +3580,36 @@ prosemirror-history@^1.0.0, prosemirror-history@^1.3.2, prosemirror-history@^1.4
     prosemirror-view "^1.31.0"
     rope-sequence "^1.3.0"
 
+<<<<<<< HEAD
 prosemirror-inputrules@^1.2.1, prosemirror-inputrules@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/prosemirror-inputrules/-/prosemirror-inputrules-1.5.0.tgz#e22bfaf1d6ea4fe240ad447c184af3d520d43c37"
   integrity sha512-K0xJRCmt+uSw7xesnHmcn72yBGTbY45vm8gXI4LZXbx2Z0jwh5aF9xrGQgrVPu0WbyFVFF3E/o9VhJYz6SQWnA==
+=======
+prosemirror-inputrules@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/prosemirror-inputrules/-/prosemirror-inputrules-1.4.0.tgz#ef1519bb2cb0d1e0cec74bad1a97f1c1555068bb"
+  integrity sha512-6ygpPRuTJ2lcOXs9JkefieMst63wVJBgHZGl5QOytN7oSZs3Co/BYbc3Yx9zm9H37Bxw8kVzCnDsihsVsL4yEg==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-state "^1.0.0"
     prosemirror-transform "^1.0.0"
 
 prosemirror-keymap@^1.0.0, prosemirror-keymap@^1.2.2:
+<<<<<<< HEAD
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/prosemirror-keymap/-/prosemirror-keymap-1.2.3.tgz#c0f6ab95f75c0b82c97e44eb6aaf29cbfc150472"
   integrity sha512-4HucRlpiLd1IPQQXNqeo81BGtkY8Ai5smHhKW9jjPKRc2wQIxksg7Hl1tTI2IfT2B/LgX6bfYvXxEpJl7aKYKw==
+=======
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/prosemirror-keymap/-/prosemirror-keymap-1.2.2.tgz#14a54763a29c7b2704f561088ccf3384d14eb77e"
+  integrity sha512-EAlXoksqC6Vbocqc0GtzCruZEzYgrn+iiGnNjsJsH4mrnIGex4qbLdWWNza3AW5W36ZRrlBID0eM6bdKH4OStQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-state "^1.0.0"
     w3c-keyname "^2.2.0"
 
+<<<<<<< HEAD
 prosemirror-markdown@^1.11.1, prosemirror-markdown@^1.13.1:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/prosemirror-markdown/-/prosemirror-markdown-1.13.2.tgz#863eb3fd5f57a444e4378174622b562735b1c503"
@@ -2805,6 +3647,27 @@ prosemirror-schema-list@^1.3.0, prosemirror-schema-list@^1.4.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/prosemirror-schema-list/-/prosemirror-schema-list-1.5.1.tgz#5869c8f749e8745c394548bb11820b0feb1e32f5"
   integrity sha512-927lFx/uwyQaGwJxLWCZRkjXG0p48KpMj6ueoYiu4JX05GGuGcgzAy62dfiV8eFZftgyBUvLx76RsMe20fJl+Q==
+=======
+prosemirror-model@^1.0.0, prosemirror-model@^1.20.0, prosemirror-model@^1.21.0, prosemirror-model@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/prosemirror-model/-/prosemirror-model-1.24.1.tgz#b445e4f9b9cfc8c1a699215057b506842ebff1a9"
+  integrity sha512-YM053N+vTThzlWJ/AtPtF1j0ebO36nvbmDy4U7qA2XQB8JVaQp1FmB9Jhrps8s+z+uxhhVTny4m20ptUvhk0Mg==
+  dependencies:
+    orderedmap "^2.0.0"
+
+prosemirror-safari-ime-span@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/prosemirror-safari-ime-span/-/prosemirror-safari-ime-span-1.0.2.tgz#20c9dcb33dfd68b2e59de8923b6506f9dc07c356"
+  integrity sha512-QJqD8s1zE/CuK56kDsUhndh5hiHh/gFnAuPOA9ytva2s85/ZEt2tNWeALTJN48DtWghSKOmiBsvVn2OlnJ5H2w==
+  dependencies:
+    prosemirror-state "^1.4.3"
+    prosemirror-view "^1.33.8"
+
+prosemirror-schema-list@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/prosemirror-schema-list/-/prosemirror-schema-list-1.5.0.tgz#f05ddbe2e71efc9157a0dbedf80761c08bda5192"
+  integrity sha512-gg1tAfH1sqpECdhIHOA/aLg2VH3ROKBWQ4m8Qp9mBKrOxQRW61zc+gMCI8nh22gnBzd1t2u1/NPLmO3nAa3ssg==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-model "^1.0.0"
     prosemirror-state "^1.0.0"
@@ -2819,6 +3682,7 @@ prosemirror-state@^1.0.0, prosemirror-state@^1.2.2, prosemirror-state@^1.4.3:
     prosemirror-transform "^1.0.0"
     prosemirror-view "^1.27.0"
 
+<<<<<<< HEAD
 prosemirror-tables@^1.3.4, prosemirror-tables@^1.6.4:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/prosemirror-tables/-/prosemirror-tables-1.7.1.tgz#df2507f285c6c7563097b4904cb7c4b9e0cd724b"
@@ -2849,6 +3713,30 @@ prosemirror-view@^1.0.0, prosemirror-view@^1.1.0, prosemirror-view@^1.27.0, pros
   version "1.40.0"
   resolved "https://registry.yarnpkg.com/prosemirror-view/-/prosemirror-view-1.40.0.tgz#212e627a0c4f0198ac9823a1232e0099c9a92865"
   integrity sha512-2G3svX0Cr1sJjkD/DYWSe3cfV5VPVTBOxI9XQEGWJDFEpsZb/gh4MV29ctv+OJx2RFX4BLt09i+6zaGM/ldkCw==
+=======
+prosemirror-tables@^1.6.2:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/prosemirror-tables/-/prosemirror-tables-1.6.3.tgz#a94e2922c271396ee00603d3839e0c64c5bb2ca7"
+  integrity sha512-8B0X6PjAkXaHKntKndetNquxLIhWDDTybON1N4flKMY9Bq8/rm5k2ddW6X6LvFpqJBQeiKRp4yG3FqI/zOyQuA==
+  dependencies:
+    prosemirror-keymap "^1.2.2"
+    prosemirror-model "^1.24.1"
+    prosemirror-state "^1.4.3"
+    prosemirror-transform "^1.10.2"
+    prosemirror-view "^1.37.1"
+
+prosemirror-transform@^1.0.0, prosemirror-transform@^1.1.0, prosemirror-transform@^1.10.2, prosemirror-transform@^1.7.3:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/prosemirror-transform/-/prosemirror-transform-1.10.2.tgz#8ebac4e305b586cd96595aa028118c9191bbf052"
+  integrity sha512-2iUq0wv2iRoJO/zj5mv8uDUriOHWzXRnOTVgCzSXnktS/2iQRa3UUQwVlkBlYZFtygw6Nh1+X4mGqoYBINn5KQ==
+  dependencies:
+    prosemirror-model "^1.21.0"
+
+prosemirror-view@^1.0.0, prosemirror-view@^1.1.0, prosemirror-view@^1.27.0, prosemirror-view@^1.31.0, prosemirror-view@^1.33.8, prosemirror-view@^1.37.1:
+  version "1.37.2"
+  resolved "https://registry.yarnpkg.com/prosemirror-view/-/prosemirror-view-1.37.2.tgz#e16b92611c6d0f30695606724dc4a9575ce7ca6b"
+  integrity sha512-ApcyrfV/cRcaL65on7TQcfWElwLyOgIjnIynfAuV+fIdlpbSvSWRwfuPaH7T5mo4AbO/FID29qOtjiDIKGWyog==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     prosemirror-model "^1.20.0"
     prosemirror-state "^1.0.0"
@@ -2859,6 +3747,7 @@ punycode.js@^2.3.1:
   resolved "https://registry.yarnpkg.com/punycode.js/-/punycode.js-2.3.1.tgz#6b53e56ad75588234e79f4affa90972c7dd8cdb7"
   integrity sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==
 
+<<<<<<< HEAD
 qr-code-styling@1.6.0-rc.1:
   version "1.6.0-rc.1"
   resolved "https://registry.yarnpkg.com/qr-code-styling/-/qr-code-styling-1.6.0-rc.1.tgz#6c89e185fa50cc9135101085c12ae95b06f1b290"
@@ -2867,6 +3756,16 @@ qr-code-styling@1.6.0-rc.1:
     qrcode-generator "^1.4.3"
 
 qrcode-generator@^1.4.3:
+=======
+qr-code-styling@^1.6.0-rc.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/qr-code-styling/-/qr-code-styling-1.9.1.tgz#1fc27ccb6d42051225f5f18ab9b99307ad62ef8b"
+  integrity sha512-T/VxQchuZkQwYhIcyyMUmtXHPeDT6lJBYHfqGD5CBDyIjswxS7JZKf443q+SXO1K/9SUswi6JpXEUQ5AoMCpyg==
+  dependencies:
+    qrcode-generator "^1.4.4"
+
+qrcode-generator@^1.4.4:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/qrcode-generator/-/qrcode-generator-1.4.4.tgz#63f771224854759329a99048806a53ed278740e7"
   integrity sha512-HM7yY8O2ilqhmULxGMpcHSF1EhJJ9yBj8gvDEuZ6M+KGJ0YY2hKpnXvRD+hZPLrDVck3ExIGhmPtSdcjC+guuw==
@@ -2878,6 +3777,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+<<<<<<< HEAD
 rehype-extended-table@^0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/rehype-extended-table/-/rehype-extended-table-0.1.3.tgz#65777a47aae4c80c2e76634b898cea11e61a7044"
@@ -2944,12 +3844,24 @@ remark-directive@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/remark-directive/-/remark-directive-3.0.0.tgz#34452d951b37e6207d2e2a4f830dc33442923268"
   integrity sha512-l1UyWJ6Eg1VPU7Hm/9tt0zKtReJQNOA4+iDMAxTyZNWnJnFlbS/7zhiel/rogTLQ2vMYwDzSJa4BiVNqGlqIMA==
+=======
+regenerator-runtime@^0.14.0:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.14.1.tgz#356ade10263f685dda125100cd862c1db895327f"
+  integrity sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==
+
+remark-directive@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/remark-directive/-/remark-directive-3.0.1.tgz#689ba332f156cfe1118e849164cc81f157a3ef0a"
+  integrity sha512-gwglrEQEZcZYgVyG1tQuA+h58EZfq5CSULw7J90AFuCTyib1thgHPoqQ+h9iFvU6R+vnZ5oNFQR5QKgGpk741A==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@types/mdast" "^4.0.0"
     mdast-util-directive "^3.0.0"
     micromark-extension-directive "^3.0.0"
     unified "^11.0.0"
 
+<<<<<<< HEAD
 remark-emoji@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-4.0.1.tgz#671bfda668047689e26b2078c7356540da299f04"
@@ -2965,6 +3877,23 @@ remark-gfm@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/remark-gfm/-/remark-gfm-4.0.1.tgz#33227b2a74397670d357bf05c098eaf8513f0d6b"
   integrity sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==
+=======
+remark-emoji@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-5.0.1.tgz#fb08ef9f5a1a036e765d68ac3dcc1b81624f4f6f"
+  integrity sha512-QCqTSvcZ65Ym+P+VyBKd4JfJfh7icMl7cIOGVmPMzWkDtdD8pQ0nQG7yxGolVIiMzSx90EZ7SwNiVpYpfTxn7w==
+  dependencies:
+    "@types/mdast" "^4.0.4"
+    emoticon "^4.0.1"
+    mdast-util-find-and-replace "^3.0.1"
+    node-emoji "^2.1.3"
+    unified "^11.0.4"
+
+remark-gfm@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/remark-gfm/-/remark-gfm-4.0.0.tgz#aea777f0744701aa288b67d28c43565c7e8c35de"
+  integrity sha512-U92vJgBPkbw4Zfu/IiW2oTZLSL3Zpv+uI7My2eq8JxKgqraFdU8YUGicEJCEgSbeaG+QDFqIcwwfMTOEelPxuA==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@types/mdast" "^4.0.0"
     mdast-util-gfm "^3.0.0"
@@ -2973,6 +3902,7 @@ remark-gfm@^4.0.0:
     remark-stringify "^11.0.0"
     unified "^11.0.0"
 
+<<<<<<< HEAD
 remark-images@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/remark-images/-/remark-images-4.1.0.tgz#1653e54b3aaff881f6fdbacca79444feb21c8965"
@@ -2984,6 +3914,8 @@ remark-images@^4.1.0:
     unist-util-position "^5.0.0"
     unist-util-visit-parents "^6.0.0"
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 remark-inline-links@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/remark-inline-links/-/remark-inline-links-7.0.0.tgz#77fbff8061abc3d0ec34187ab71678a710df05e1"
@@ -3003,10 +3935,17 @@ remark-parse@^11.0.0:
     micromark-util-types "^2.0.0"
     unified "^11.0.0"
 
+<<<<<<< HEAD
 remark-rehype@^11.1.2:
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/remark-rehype/-/remark-rehype-11.1.2.tgz#2addaadda80ca9bd9aa0da763e74d16327683b37"
   integrity sha512-Dh7l57ianaEoIpzbp0PC9UKAdCSVklD8E5Rpw7ETfbTl3FqcOOgq5q2LVDhgGCkaBv7p24JXikPdvhhmHvKMsw==
+=======
+remark-rehype@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/remark-rehype/-/remark-rehype-11.1.1.tgz#f864dd2947889a11997c0a2667cd6b38f685bca7"
+  integrity sha512-g/osARvjkBXb6Wo0XvAeXQohVta8i84ACbenPpoSsxTOQH/Ae0/RGP4WZgnMH5pMLpsj4FG7OHmcIcXxpza8eQ==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     "@types/hast" "^3.0.0"
     "@types/mdast" "^4.0.0"
@@ -3065,6 +4004,7 @@ semver@^6.3.1:
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
 seroval-plugins@^1.1.0:
+<<<<<<< HEAD
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.3.2.tgz#4200b538d699853c9bf5c3b7155c498c7c263a6a"
   integrity sha512-0QvCV2lM3aj/U3YozDiVwx9zpH0q8A60CTWIv4Jszj/givcudPb48B+rkU5D51NJ0pTpweGMttHjboPa9/zoIQ==
@@ -3073,6 +4013,16 @@ seroval@^1.1.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.3.2.tgz#7e5be0dc1a3de020800ef013ceae3a313f20eca7"
   integrity sha512-RbcPH1n5cfwKrru7v7+zrZvjLurgHhGyso3HTyGtRivGWgYjbOmGuivCQaORNELjNONoK35nj28EoWul9sb1zQ==
+=======
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.2.1.tgz#fa535e70ade8af553634b2b5c80d8a6fd8c2ff72"
+  integrity sha512-H5vs53+39+x4Udwp4J5rNZfgFuA+Lt+uU+09w1gYBVWomtAl98B+E9w7yC05Xc81/HgLvJdlyqJbU0fJCKCmdw==
+
+seroval@^1.1.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.2.1.tgz#fc671d63445923ab64f7abaf3967c83901382f40"
+  integrity sha512-yBxFFs3zmkvKNmR0pFSU//rIsYjuX418TnlDmc2weaq5XFDqDIV/NOMPBoLrbxjLH42p4UzRuXHryXh9dYcKcw==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 skin-tone@^2.0.0:
   version "2.0.0"
@@ -3090,7 +4040,26 @@ solid-js@1.9.3:
     seroval "^1.1.0"
     seroval-plugins "^1.1.0"
 
+<<<<<<< HEAD
 solid-presence@^0.1.8:
+=======
+solid-markdown@^2.0.1:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.14.tgz#0db39997965c20a66780de114c2b1f63017cb814"
+  integrity sha512-Ln8R4TsNWySXvKkS80OHV+CSR/mwjk5XfGvC5UjZo/y/rAbbkBoxt6FXoWsfCkTW6GH9yxYvahSMXsUJU/ov4Q==
+  dependencies:
+    comma-separated-tokens "^2.0.3"
+    property-information "^6.3.0"
+    remark-parse "^11.0.0"
+    remark-rehype "^11.1.1"
+    space-separated-tokens "^2.0.2"
+    style-to-object "^0.3.0"
+    unified "^11.0.5"
+    unist-util-visit "^4.1.2"
+    vfile "^6.0.3"
+
+solid-presence@^0.1.6:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/solid-presence/-/solid-presence-0.1.8.tgz#c8713c7d52122b128d22fc1c0afdb08b0fb93d07"
   integrity sha512-pWGtXUFWYYUZNbg5YpG5vkQJyOtzn2KXhxYaMx/4I+lylTLYkITOLevaCwMRN+liCVk0pqB6EayLWojNqBFECA==
@@ -3104,6 +4073,7 @@ solid-prevent-scroll@^0.1.4:
   dependencies:
     "@corvu/utils" "~0.4.1"
 
+<<<<<<< HEAD
 solid-refresh@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/solid-refresh/-/solid-refresh-0.5.3.tgz#41b97fa1ee655d86125abda8e398861683f926b6"
@@ -3117,6 +4087,16 @@ solid-tiptap@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/solid-tiptap/-/solid-tiptap-0.7.0.tgz#57b5964c2d2f990cc7cfe3217be4e50cc82a1b99"
   integrity sha512-EIOopM1gcV6Pjp6R5l5iQy5RqFodDpHzQDRdDJAqffi3XqMSu6lzd7dcDtb1DPbZtvl1uNTXRxmpUGGvB8KD0A==
+=======
+solid-refresh@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/solid-refresh/-/solid-refresh-0.6.3.tgz#d23ef80f04e177619c9234a809c573cb16360627"
+  integrity sha512-F3aPsX6hVw9ttm5LYlth8Q15x6MlI/J3Dn+o3EQyRTtTxidepSTwAYdozt01/YA+7ObcciagGEyXIopGZzQtbA==
+  dependencies:
+    "@babel/generator" "^7.23.6"
+    "@babel/helper-module-imports" "^7.22.15"
+    "@babel/types" "^7.23.6"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 solid-transition-group@0.2.3:
   version "0.2.3"
@@ -3131,7 +4111,11 @@ solid-transition-group@0.2.3:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
+<<<<<<< HEAD
 space-separated-tokens@^2.0.0:
+=======
+space-separated-tokens@^2.0.2:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz#1ecd9d2350a3844572c3f4a312bceb018348859f"
   integrity sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==
@@ -3144,6 +4128,7 @@ stringify-entities@^4.0.0:
     character-entities-html4 "^2.0.0"
     character-entities-legacy "^3.0.0"
 
+<<<<<<< HEAD
 tippy.js@^6.3.7:
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.3.7.tgz#8ccfb651d642010ed9a32ff29b0e9e19c5b8c61c"
@@ -3160,6 +4145,14 @@ tiptap-markdown@^0.8.10:
     markdown-it "^14.1.0"
     markdown-it-task-lists "^2.1.1"
     prosemirror-markdown "^1.11.1"
+=======
+style-to-object@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.3.0.tgz#b1b790d205991cc783801967214979ee19a76e46"
+  integrity sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
+  dependencies:
+    inline-style-parser "0.1.1"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -3173,17 +4166,24 @@ trim-lines@^3.0.0:
   resolved "https://registry.yarnpkg.com/trim-lines/-/trim-lines-3.0.1.tgz#d802e332a07df861c48802c04321017b1bd87338"
   integrity sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==
 
+<<<<<<< HEAD
 trim-trailing-lines@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/trim-trailing-lines/-/trim-trailing-lines-2.1.0.tgz#9aac7e89b09cb35badf663de7133c6de164f86df"
   integrity sha512-5UR5Biq4VlVOtzqkm2AZlgvSlDJtME46uV0br0gENbwN4l5+mMKT4b9gJKqWtuL2zAIqajGJGuvbCbcAJUZqBg==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 trough@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/trough/-/trough-2.2.0.tgz#94a60bd6bd375c152c1df911a4b11d5b0256f50f"
   integrity sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==
 
+<<<<<<< HEAD
 tslib@2, tslib@^2.5.0, tslib@^2.8.0:
+=======
+tslib@2, tslib@^2.8.0, tslib@^2.8.1:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
@@ -3203,10 +4203,17 @@ twemoji@^14.0.2:
     twemoji-parser "14.0.0"
     universalify "^0.1.2"
 
+<<<<<<< HEAD
 typescript@5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.2.tgz#5ebb5e5a5b75f085f22bc3f8460fba308310fa78"
   integrity sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==
+=======
+typescript@^5.0.0:
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
+  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 uc.micro@^2.0.0, uc.micro@^2.1.0:
   version "2.1.0"
@@ -3218,7 +4225,11 @@ unicode-emoji-modifier-base@^1.0.0:
   resolved "https://registry.yarnpkg.com/unicode-emoji-modifier-base/-/unicode-emoji-modifier-base-1.0.0.tgz#dbbd5b54ba30f287e2a8d5a249da6c0cef369459"
   integrity sha512-yLSH4py7oFH3oG/9K+XWrz1pSi3dfUrWEnInbxMfArOfc1+33BlGPQtLsOYwvdMy11AwUBetYuaRxSPqgkq+8g==
 
+<<<<<<< HEAD
 unified@^11.0.0, unified@^11.0.3, unified@^11.0.4:
+=======
+unified@^11.0.0, unified@^11.0.3, unified@^11.0.4, unified@^11.0.5:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/unified/-/unified-11.0.5.tgz#f66677610a5c0a9ee90cab2b8d4d66037026d9e1"
   integrity sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==
@@ -3231,6 +4242,7 @@ unified@^11.0.0, unified@^11.0.3, unified@^11.0.4:
     trough "^2.0.0"
     vfile "^6.0.0"
 
+<<<<<<< HEAD
 unist-util-find-after@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/unist-util-find-after/-/unist-util-find-after-5.0.0.tgz#3fccc1b086b56f34c8b798e1ff90b5c54468e896"
@@ -3238,6 +4250,14 @@ unist-util-find-after@^5.0.0:
   dependencies:
     "@types/unist" "^3.0.0"
     unist-util-is "^6.0.0"
+=======
+unist-util-is@^5.0.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-5.2.1.tgz#b74960e145c18dcb6226bc57933597f5486deae9"
+  integrity sha512-u9njyyfEh43npf1M+yGKDGVPbY/JWEemg5nH05ncKPfi+kBbKBJoTdsogMu33uhytuLlv9y0O7GH7fEdwLdLQw==
+  dependencies:
+    "@types/unist" "^2.0.0"
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 unist-util-is@^6.0.0:
   version "6.0.0"
@@ -3260,6 +4280,17 @@ unist-util-stringify-position@^4.0.0:
   dependencies:
     "@types/unist" "^3.0.0"
 
+<<<<<<< HEAD
+=======
+unist-util-visit-parents@^5.1.1:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-5.1.3.tgz#b4520811b0ca34285633785045df7a8d6776cfeb"
+  integrity sha512-x6+y8g7wWMyQhL1iZfhIPhDAs7Xwbn9nRosDXl7qoPTSCy0yNxnKc+hWokFifWQIDGi154rdUqKvbCa4+1kLhg==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+
+>>>>>>> 43be1874 (Update layout login for MW login)
 unist-util-visit-parents@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-6.0.1.tgz#4d5f85755c3b8f0dc69e21eca5d6d82d22162815"
@@ -3268,7 +4299,20 @@ unist-util-visit-parents@^6.0.0:
     "@types/unist" "^3.0.0"
     unist-util-is "^6.0.0"
 
+<<<<<<< HEAD
 unist-util-visit@5.0.0, unist-util-visit@^5.0.0:
+=======
+unist-util-visit@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-4.1.2.tgz#125a42d1eb876283715a3cb5cceaa531828c72e2"
+  integrity sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^5.1.1"
+
+unist-util-visit@^5.0.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-5.0.0.tgz#a7de1f31f72ffd3519ea71814cccf5fd6a9217d6"
   integrity sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==
@@ -3282,10 +4326,17 @@ universalify@^0.1.0, universalify@^0.1.2:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
+<<<<<<< HEAD
 update-browserslist-db@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.1.3.tgz#348377dd245216f9e7060ff50b15a1b740b75420"
   integrity sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==
+=======
+update-browserslist-db@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.1.2.tgz#97e9c96ab0ae7bcac08e9ae5151d26e6bc6b5580"
+  integrity sha512-PPypAm5qvlD7XMZC3BujecnaOxwhrtoFR+Dqkk5Aa/6DssiH0ibKoketaj9w8LP7Bont1rYeoV5plxD7RTEPRg==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     escalade "^3.2.0"
     picocolors "^1.1.1"
@@ -3295,6 +4346,7 @@ validate-html-nesting@^1.2.1:
   resolved "https://registry.yarnpkg.com/validate-html-nesting/-/validate-html-nesting-1.2.2.tgz#2d74de14b598a0de671fad01bd71deabb93b8aca"
   integrity sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==
 
+<<<<<<< HEAD
 vfile-location@^5.0.0:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/vfile-location/-/vfile-location-5.0.3.tgz#cb9eacd20f2b6426d19451e0eafa3d0a846225c3"
@@ -3303,6 +4355,8 @@ vfile-location@^5.0.0:
     "@types/unist" "^3.0.0"
     vfile "^6.0.0"
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 vfile-message@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-4.0.2.tgz#c883c9f677c72c166362fd635f21fc165a7d1181"
@@ -3311,7 +4365,11 @@ vfile-message@^4.0.0:
     "@types/unist" "^3.0.0"
     unist-util-stringify-position "^4.0.0"
 
+<<<<<<< HEAD
 vfile@^6.0.0:
+=======
+vfile@^6.0.0, vfile@^6.0.3:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-6.0.3.tgz#3652ab1c496531852bf55a6bac57af981ebc38ab"
   integrity sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==
@@ -3319,6 +4377,7 @@ vfile@^6.0.0:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
+<<<<<<< HEAD
 vite-plugin-solid@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-solid/-/vite-plugin-solid-2.7.0.tgz#44de91335f30dfddd7f5f59a7019020860fcba2e"
@@ -3336,6 +4395,24 @@ vite@4.4.9:
   version "4.4.9"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.4.9.tgz#1402423f1a2f8d66fd8d15e351127c7236d29d3d"
   integrity sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==
+=======
+vite-plugin-solid@^2.5.0:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-solid/-/vite-plugin-solid-2.11.1.tgz#cbb5343faaa4100666577457a8180ff4a0e11f87"
+  integrity sha512-X9vbbK6AOOA6yxSsNl1VTuUq5y4BG9AR6Z5F/J1ZC2VO7ll8DlSCbOL+RcZXlRbxn0ptE6OI5832nGQhq4yXKQ==
+  dependencies:
+    "@babel/core" "^7.23.3"
+    "@types/babel__core" "^7.20.4"
+    babel-preset-solid "^1.8.4"
+    merge-anything "^5.1.7"
+    solid-refresh "^0.6.3"
+    vitefu "^1.0.4"
+
+vite@^4.0.3:
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.5.9.tgz#f4dfd4c4295743b50c3e3f90df798d70de699e4f"
+  integrity sha512-qK9W4xjgD3gXbC0NmdNFFnVFLMWSNiR3swj957yutwzzN16xF/E7nmtAyp1rT9hviDroQANjE4HK3H4WqWdFtw==
+>>>>>>> 43be1874 (Update layout login for MW login)
   dependencies:
     esbuild "^0.18.10"
     postcss "^8.4.27"
@@ -3343,27 +4420,41 @@ vite@4.4.9:
   optionalDependencies:
     fsevents "~2.3.2"
 
+<<<<<<< HEAD
 vitefu@^0.2.3:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/vitefu/-/vitefu-0.2.5.tgz#c1b93c377fbdd3e5ddd69840ea3aa70b40d90969"
   integrity sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==
+=======
+vitefu@^1.0.4:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/vitefu/-/vitefu-1.0.5.tgz#eab501e07da167bbb68e957685823e6b425e7ce2"
+  integrity sha512-h4Vflt9gxODPFNGPwp4zAMZRpZR7eslzwH2c5hn5kNZ5rhnKyRJ50U+yGCdc2IRaBs8O4haIgLNGrV5CrpMsCA==
+>>>>>>> 43be1874 (Update layout login for MW login)
 
 w3c-keyname@^2.2.0:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/w3c-keyname/-/w3c-keyname-2.2.8.tgz#7b17c8c6883d4e8b86ac8aba79d39e880f8869c5"
   integrity sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==
 
+<<<<<<< HEAD
 web-namespaces@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-2.0.1.tgz#1010ff7c650eccb2592cebeeaf9a1b253fd40692"
   integrity sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==
 
+=======
+>>>>>>> 43be1874 (Update layout login for MW login)
 yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
   integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
 
+<<<<<<< HEAD
 zwitch@^2.0.0, zwitch@^2.0.4:
+=======
+zwitch@^2.0.0:
+>>>>>>> 43be1874 (Update layout login for MW login)
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-2.0.4.tgz#c827d4b0acb76fc3e685a4c6ec2902d51070e9d7"
   integrity sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==
