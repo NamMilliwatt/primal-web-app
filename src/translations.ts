@@ -1946,6 +1946,18 @@ export const toastZapFail = {
   description: 'Toast message indicating failed zap',
 };
 
+export const toastLoginSuccess = {
+  id: 'toast.loginSuccess',
+  defaultMessage: 'You have successfully logged in',
+  description: 'Toast message indicating successful login',
+}
+
+export const toastLoginFail = {
+  id: 'toast.loginFail',
+  defaultMessage: 'We were unable to login',
+  description: 'Toast message indicating failed login',
+};
+
 
 export const toastZapProfile = {
   id: 'toast.zapProfile',

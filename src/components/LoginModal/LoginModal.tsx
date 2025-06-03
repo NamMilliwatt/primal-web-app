@@ -3,7 +3,7 @@ import { Component, createEffect, createSignal, Match, Switch } from 'solid-js';
 import { useAccountContext } from '../../contexts/AccountContext';
 import Modal from '../Modal/Modal';
 
-import { login as tLogin, actions as tActions } from '../../translations';
+import { login as tLogin, actions as tActions, toastZapFail, toastLoginFail, toastLoginSuccess } from '../../translations';
 
 import styles from './LoginModal.module.scss';
 import { hookForDev } from '../../lib/devTools';
@@ -12,6 +12,7 @@ import CreatePinModal from '../CreatePinModal/CreatePinModal';
 import TextInput from '../TextInput/TextInput';
 import { nip19 } from '../../lib/nTools';
 import { storeSec } from '../../lib/localStore';
+import { useToastContext } from '../Toaster/Toaster';
 
 import AdvancedSearchDialog from '../AdvancedSearch/AdvancedSearchDialog';
 
@@ -29,7 +30,7 @@ const LoginModal: Component<{
   const [appPassword, setAppPassword] = createSignal('');
 
   let loginInput: HTMLInputElement | undefined;
-  
+  const toast = useToastContext();
 
   const onLogin = () => {
     // const sec = enteredKey();
@@ -39,8 +40,37 @@ const LoginModal: Component<{
     // account?.actions.setSec(sec);
 
     // Handle login with username and app password
-  
-    setStep(() => 'pin');
+    let mwServerURL = 'http://localhost:8200';
+    fetch(`${mwServerURL}/signin`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: username(),
+        appPassword: appPassword(),
+      }),
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Login failed');
+      }
+
+      return response.json();
+    })
+    .then(data => {
+      setStep(() => 'none');
+      const accessToken = data.access_token
+
+      toast?.sendSuccess(
+          intl.formatMessage(toastLoginSuccess),
+      );
+    })
+    .catch(error => {
+      toast?.sendWarning(
+          intl.formatMessage(toastLoginFail),
+      );
+    });
   };
 
   const onStoreSec = (sec: string | undefined) => {
