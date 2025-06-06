@@ -40,7 +40,8 @@ const LoginModal: Component<{
     // account?.actions.setSec(sec);
 
     // Handle login with username and app password
-    let mwServerURL = 'http://localhost:8200';
+    // let mwServerURL = 'http://localhost:8200';
+    let mwServerURL = 'https://enclave.little.app'; 
     fetch(`${mwServerURL}/signin`, {
       method: 'POST',
       headers: {
