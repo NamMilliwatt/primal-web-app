@@ -33,10 +33,9 @@ const LoginModal: Component<{
   const toast = useToastContext();
 
   const onLogin = () => {
+    ////----- Old login method using nsec
     // const sec = enteredKey();
-
     // if (!isValidNsec()) return;
-
     // account?.actions.setSec(sec);
 
     // Handle login with username and app password
@@ -62,10 +61,17 @@ const LoginModal: Component<{
     .then(data => {
       setStep(() => 'none');
       const accessToken = data.access_token
+      const npub = data.npub;
 
       toast?.sendSuccess(
           intl.formatMessage(toastLoginSuccess),
       );
+
+      // Store the access token in local storage or a secure place
+      localStorage.setItem('accessToken', accessToken);
+      localStorage.setItem('pubkey', npub);
+
+      account?.actions.setPublicKey(npub);
     })
     .catch(error => {
       toast?.sendWarning(

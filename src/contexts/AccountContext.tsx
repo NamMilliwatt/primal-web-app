@@ -309,41 +309,41 @@ export function AccountProvider(props: { children: JSXElement }) {
     }
   }))
 
-  const checkNostrChange = async () => {
-    if (location.pathname === '/') return;
+  // const checkNostrChange = async () => {
+  //   if (location.pathname === '/') return;
 
-    const win = window as NostrWindow;
-    const nostr = win.nostr;
+  //   const win = window as NostrWindow;
+  //   const nostr = win.nostr;
 
-    if (!nostr) return;
+  //   if (!nostr) return;
 
-    const storedKey = localStorage.getItem('pubkey');
+  //   const storedKey = localStorage.getItem('pubkey');
 
-    try {
-      const key = await getPublicKey();
+  //   try {
+  //     const key = await getPublicKey();
 
-      if (key === storedKey) return;
+  //     if (key === storedKey) return;
 
-      updateStore('isKeyLookupDone', () => false);
+  //     updateStore('isKeyLookupDone', () => false);
 
-      setPublicKey(key);
+  //     setPublicKey(key);
 
-      // Read profile from storage
-      const storedUser = getStoredProfile(key);
+  //     // Read profile from storage
+  //     const storedUser = getStoredProfile(key);
 
-      if (storedUser) {
-        // If it exists, set it as active user
-        updateStore('activeUser', () => ({...storedUser}));
-      }
+  //     if (storedUser) {
+  //       // If it exists, set it as active user
+  //       updateStore('activeUser', () => ({...storedUser}));
+  //     }
 
-      // Fetch it anyway, maybe there is an update
-      updateAccountProfile(key);
-    } catch (e: any) {
-      setPublicKey(undefined);
-      localStorage.removeItem('pubkey');
-      logError('error fetching public key: ', e);
-    }
-  };
+  //     // Fetch it anyway, maybe there is an update
+  //     updateAccountProfile(key);
+  //   } catch (e: any) {
+  //     setPublicKey(undefined);
+  //     localStorage.removeItem('pubkey');
+  //     logError('error fetching public key: ', e);
+  //   }
+  // };
 
   const updateAccountProfile = (pubkey: string) => {
     if (pubkey !== store.publicKey) return;
@@ -657,6 +657,7 @@ export function AccountProvider(props: { children: JSXElement }) {
     const storedKey = localStorage.getItem('pubkey');
 
     if (storedKey) {
+      console.log('Stored pubkey found: ', storedKey);
       setPublicKey(storedKey);
 
       // Read profile from storage
@@ -666,8 +667,41 @@ export function AccountProvider(props: { children: JSXElement }) {
         // If it exists, set it as active user
         updateStore('activeUser', () => ({...storedUser}));
       }
+
+      updateAccountProfile(storedKey);
+    }
+    else {
+      try {
+            const key = await getPublicKey();
+
+            if (key === undefined) {
+              setTimeout(fetchNostrKey, 250);
+            }
+            else {
+              if (key !== storedKey) {
+                setPublicKey(key);
+
+                // Read profile from storage
+                const storedUser = getStoredProfile(key);
+
+                if (storedUser) {
+                  // If it exists, set it as active user
+                  updateStore('activeUser', () => ({...storedUser}));
+                }
+              }
+
+              // Fetch it anyway, maybe there is an update
+              updateAccountProfile(key);
+            }
+          } catch (e: any) {
+            // console.error('Error fetching public key: ', e);
+            setPublicKey(undefined);
+            localStorage.removeItem('pubkey');
+            logError('error fetching public key: ', e);
+      }
     }
 
+    /// DISABLE SCRIPT GET NSEC
     if (nostr === undefined) {
       logError('Nostr extension not found');
       // Try again after one second if extensionAttempts are not exceeded
@@ -677,55 +711,30 @@ export function AccountProvider(props: { children: JSXElement }) {
         setTimeout(fetchNostrKey, 250);
         return;
       }
-
-      const sec = readSecFromStorage();
-
-      if (sec) {
-        if (sec.startsWith(pinEncodePrefix)) {
-          updateStore('showPin', () => sec);
-        }
-        else {
-          setSec(sec);
-        }
-      } else {
-        updateStore('publicKey', () => undefined);
-      }
-
-      updateStore('isKeyLookupDone', () => true);
-      return;
-    }
-    else {
-      updateStore('sec', () => undefined);
-      storeSec(undefined);
     }
 
-    try {
-      const key = await getPublicKey();
+    //   const sec = readSecFromStorage();
 
-      if (key === undefined) {
-        setTimeout(fetchNostrKey, 250);
-      }
-      else {
-        if (key !== storedKey) {
-          setPublicKey(key);
+    //   if (sec) {
+    //     if (sec.startsWith(pinEncodePrefix)) {
+    //       updateStore('showPin', () => sec);
+    //     }
+    //     else {
+    //       setSec(sec);
+    //     }
+    //   } else {
+    //     updateStore('publicKey', () => undefined);
+    //   }
 
-          // Read profile from storage
-          const storedUser = getStoredProfile(key);
+    //   updateStore('isKeyLookupDone', () => true);
+    //   return;
+    // }
+    // else {
+    //   updateStore('sec', () => undefined);
+    //   storeSec(undefined);
+    // }
 
-          if (storedUser) {
-            // If it exists, set it as active user
-            updateStore('activeUser', () => ({...storedUser}));
-          }
-        }
-
-        // Fetch it anyway, maybe there is an update
-        updateAccountProfile(key);
-      }
-    } catch (e: any) {
-      setPublicKey(undefined);
-      localStorage.removeItem('pubkey');
-      logError('error fetching public key: ', e);
-    }
+    
   }
 
   const setShowPin = (sec: string) => {

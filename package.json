@@ -2,6 +2,7 @@
   "name": "primal-web-app",
   "version": "2.2.3",
   "description": "",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -18,6 +19,7 @@
     "@formatjs/cli": "6.1.5",
     "@types/d3-format": "3.0.4",
     "@types/pako": "2.0.3",
+    "solid-devtools": "^0.34.0",
     "typescript": "5.2.2",
     "vite": "4.4.9",
     "vite-plugin-solid": "2.7.0"

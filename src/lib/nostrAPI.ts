@@ -90,13 +90,21 @@ export const signEvent = async (event: NostrRelayEvent) => {
     return await enqueueNostr<NostrRelaySignedEvent>(async (nostr) => {
       try {
         // HANDLE REMOTE SIGNER
+        // Get access token
+        let accessToken = localStorage.getItem('accessToken');
+        if (!accessToken) {
+          throw('no_access_token');
+        }
+
         let mwServerURL = "https://enclave.little.app"
-        fetch(`${mwServerURL}/sign`, {
+        
+        const response = await fetch(`${mwServerURL}/sign`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
+            accessToken: accessToken,
             event: event,
           }),
         })
