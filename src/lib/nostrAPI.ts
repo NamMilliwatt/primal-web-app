@@ -89,7 +89,31 @@ export const signEvent = async (event: NostrRelayEvent) => {
   try {
     return await enqueueNostr<NostrRelaySignedEvent>(async (nostr) => {
       try {
-        return await nostr.signEvent(event);
+        // HANDLE REMOTE SIGNER
+        let mwServerURL = "https://enclave.little.app"
+        fetch(`${mwServerURL}/sign`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            event: event,
+          }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            throw(data.error);
+          }
+
+          return data.signed_event;
+        })
+        .catch(error => {
+          throw(error);
+        });
+
+        // return await nostr.signEvent(event);
+
       } catch(reason) {
         throw(reason);
       }
