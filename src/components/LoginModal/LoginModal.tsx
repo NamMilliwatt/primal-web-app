@@ -69,9 +69,10 @@ const LoginModal: Component<{
 
       // Store the access token in local storage or a secure place
       localStorage.setItem('accessToken', accessToken);
-      localStorage.setItem('pubkey', npub);
+      let pubkeyHex = nip19.decode(npub).data;
+      localStorage.setItem('pubkey', pubkeyHex.toString());
 
-      account?.actions.setPublicKey(npub);
+      account?.actions.setPublicKey(pubkeyHex.toString());
     })
     .catch(error => {
       toast?.sendWarning(

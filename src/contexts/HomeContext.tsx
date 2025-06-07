@@ -203,9 +203,12 @@ export const HomeProvider = (props: { children: ContextChildren }) => {
 
   const fetchNotes = async (spec: string, until = 0, includeIsFetching = true) => {
 
+    console.log('fetchNotes', spec, until);
     updateStore('isFetching' , () => includeIsFetching);
 
     const pubkey = account?.publicKey || minKnownProfiles.names['primal'];
+
+    console.log('Fetching notes for pubkey:', pubkey, 'spec:', spec, 'until:', until);
 
     const offset = calculateNotesOffset(store.notes, store.paging.notes);
 
@@ -219,6 +222,8 @@ export const HomeProvider = (props: { children: ContextChildren }) => {
         offset,
       },
     );
+
+    console.log('Fetched notes:', notes.length, 'paging:', paging);
 
     const sortedNotes = filterAndSortNotes(notes, paging);
 
@@ -285,6 +290,7 @@ export const HomeProvider = (props: { children: ContextChildren }) => {
   };
 
   const getFirstPage = () => {
+    console.log('=====> getFirstPage');
     const feed = store.selectedFeed;
     if (!feed?.spec) return;
 

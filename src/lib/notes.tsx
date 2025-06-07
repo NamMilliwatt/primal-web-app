@@ -420,6 +420,8 @@ export const proxyEvent = async (event: NostrEvent, relays: Relay[], relaySettin
       return;
     }
 
+    console.log('Sending signed note: ', signedNote);
+
     const subId = `publish_event_${signedNote.id}`;
 
     const unsub = subsTo(subId, {
@@ -436,6 +438,8 @@ export const proxyEvent = async (event: NostrEvent, relays: Relay[], relaySettin
         reject('No publish confirmation')
       }
     })
+
+    console.log('Publishing note to cache relays: ', subId, publishRelays);
 
     sendMessage(JSON.stringify([
       "REQ",
@@ -675,7 +679,7 @@ export const broadcastEvent = async (event: NostrRelaySignedEvent, shouldProxy: 
 };
 
 export const sendEvent = async (event: NostrEvent, relays: Relay[], relaySettings: NostrRelays | undefined, shouldProxy: boolean) => {
-
+  console.log('Sending event: ', event);
   if (shouldProxy) {
     return await proxyEvent(event, relays, relaySettings);
   }
@@ -685,7 +689,10 @@ export const sendEvent = async (event: NostrEvent, relays: Relay[], relaySetting
   try {
     signedNote = await signEvent(event);
     if (!signedNote) throw('event_not_signed');
+
+    console.log('Signed event: ', signedNote);
   } catch (reason) {
+    console.log('Failed to sign event: ', reason);
     logError('Failed to send event: ', reason);
     return { success: false , reasons: [reason]} as SendNoteResult;
   }
@@ -709,6 +716,11 @@ export const sendEvent = async (event: NostrEvent, relays: Relay[], relaySetting
 
   let relaysActual = [...relays];
 
+  // TRY TO ADD 
+  if(relaysActual.length === 0) {
+    relaysActual.push(relayInit("wss://relay.primal.net"));
+  }
+
   if (relaysActual.length === 0) {
     relaysActual = Object.keys(relaySettings || {});
   }
@@ -731,8 +743,7 @@ export const sendEvent = async (event: NostrEvent, relays: Relay[], relaySetting
       }, 8_000);
 
       try {
-        logInfo('publishing to relay: ', relay, signedNote)
-
+        logInfo('publishing to relay: ', relay)
         await relay.publish(signedNote);
 
         logInfo(`${relay.url} has accepted our event`);

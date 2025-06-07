@@ -148,12 +148,15 @@ const ReadsSidebar: Component< { id?: string } > = (props) => {
 
   const getAuthorData = async (pubkey: string) => {
     const userNpub = account?.publicKey || minKnownProfiles.names['primal'];
+
+    console.log('getAuthorData', userNpub, pubkey);
     if (!userNpub || !pubkey) return;
 
     const subId = `reads_fpi_${APP_ID}`;
 
     setIsFetching(() => true);
 
+    console.log('Fetching profile:', subId);
     const profile = await fetchUserProfile(userNpub, pubkey, subId);
 
     setIsFetching(() => false);
@@ -162,6 +165,7 @@ const ReadsSidebar: Component< { id?: string } > = (props) => {
   };
 
   onMount(() => {
+    console.log('ReadsSidebar mounted');
     if (account?.isKeyLookupDone && reads?.recomendedReads.length === 0) {
       reads.actions.doSidebarSearch('');
     }

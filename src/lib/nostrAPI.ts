@@ -114,15 +114,19 @@ export const signEvent = async (event: NostrRelayEvent) => {
             throw(data.error);
           }
 
-          return data.signed_event;
+          return JSON.parse(data.signed_event.signed_event);
         })
         .catch(error => {
           throw(error);
         });
 
+        console.log('Remote signed event:', response);
+        return response
+
         // return await nostr.signEvent(event);
 
       } catch(reason) {
+        console.error('Error signing event:', reason);
         throw(reason);
       }
     })

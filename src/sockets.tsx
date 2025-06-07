@@ -218,8 +218,8 @@ export const subsTo = (
     // try {
       const data = await readData(event);
       const message: NostrEvent | NostrEOSE | NostrNotice | NostrEvents = JSON.parse(data);
+      // console.log("Messages subsTo: ", message);
       const [type, subscriptionId] = message;
-
 
       if (handlers && subId === subscriptionId) {
         if (type === 'EVENTS') {
@@ -254,6 +254,7 @@ export const subsTo = (
   };
 
   socket()?.addEventListener('message', listener);
+  console.log('SUBS TO: ', subId, ' : ', socket());
 
   return () => {
     socket()?.removeEventListener('message', listener);

@@ -108,6 +108,7 @@ const Home: Component = () => {
   });
 
   const loadNewContent = () => {
+    console.log('Loading new content...');
     if (newNotesCount() > 100 || app?.appState === 'waking') {
       context?.actions.getFirstPage();
       return;

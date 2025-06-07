@@ -705,13 +705,13 @@ const EditBox: Component<{
       return;
     }
 
-    if (!account.sec || account.sec.length === 0) {
-      const sec = readSecFromStorage();
-      if (sec) {
-        account.actions.setShowPin(sec);
-        return;
-      }
-    }
+    // if (!account.sec || account.sec.length === 0) {
+    //   const sec = readSecFromStorage();
+    //   if (sec) {
+    //     account.actions.setShowPin(sec);
+    //     return;
+    //   }
+    // }
 
     // if (!account.proxyThroughPrimal && account.relays.length === 0) {
     //   toast?.sendWarning(

@@ -156,12 +156,15 @@ export const fetchMegaFeed = (
     return new Promise<MegaFeedResults>((resolve) => {
       let page: MegaFeedPage = {...emptyMegaFeedPage()};
 
+      console.log('fetchMegaFeed', pubkey, specification, subId, paging);
       const unsub = subsTo(subId, {
         onEose: () => {
+          console.log('fetchMegaFeed EOSE', pubkey);
           unsub();
           resolve(pageResolve(page));
         },
         onEvent: (s, content) => {
+          console.log('fetchMegaFeed EVENTS', pubkey, specification, subId);
           updateFeedPage(page, content);
         }
       });

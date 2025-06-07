@@ -61,9 +61,9 @@ export const connectToRelay: ConnectToRelay =
     }
 
     try {
-      logInfo('Connecting relay: ', relay);
+      // logInfo('Connecting relay: ', relay);
       await relay.connect();
-      logInfo('Connected to relay: ', relay);
+      // logInfo('Connected to relay: ', relay);
       onConnect(relay);
       return true;
     } catch (e) {

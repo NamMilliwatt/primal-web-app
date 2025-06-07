@@ -36,7 +36,7 @@ import {
 import { useAccountContext } from "./AccountContext";
 import { readSystemDarkMode, saveAnimated, saveHomeFeeds, saveNWC, saveNWCActive, saveReadsFeeds, saveSystemDarkMode, saveTheme } from "../lib/localStore";
 import { getDefaultSettings, getHomeSettings, getNWCSettings, getReadsSettings, getSettings, sendSettings, setHomeSettings, setReadsSettings } from "../lib/settings";
-import { APP_ID } from "../App";
+import App, { APP_ID } from "../App";
 import { useIntl } from "@cookbook/solid-intl";
 import { feedProfile, feedProfileDesription, settings as t } from "../translations";
 import { getMobileReleases } from "../lib/releases";
@@ -687,6 +687,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
 
   const loadDefaults = () => {
 
+    console.log('Loading default settings...');
     const subid = `load_defaults_${APP_ID}`;
 
     const unsub = subsTo(subid, {
@@ -744,9 +745,12 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
       return;
     }
 
+    console.log('Loading settings for: ', pubkey);
+
     updateStore('homeFeeds', () => [ ...loadHomeFeeds(pubkey) ])
     updateStore('readsFeeds', () => [ ...loadReadsFeeds(pubkey) ])
 
+    console.log('Loading settings...' + APP_ID);
     const settingsSubId = `load_settings_${APP_ID}`;
     const settingsHomeSubId = `load_home_settings_${APP_ID}`;
     const settingsReadsSubId = `load_reads_settings_${APP_ID}`;
@@ -754,6 +758,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
 
     const unsubSettings = subsTo(settingsSubId, {
       onEvent: (_, content) => {
+        console.log('Settings received: ', content);
         if (!content) return;
 
         try {
@@ -848,6 +853,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
         }
       },
       onNotice: () => {
+        console.log('Settings load notice');
         toaster?.sendWarning(intl.formatMessage({
           id: 'settings.loadFail',
           defaultMessage: 'Failed to load settings. Will be using local settings.',

@@ -28,6 +28,7 @@ const proccessStat = (stat: NostrStatsContent) => {
 };
 
 export const processTrendingNotes = (type: string, content: NostrEventContent | undefined) => {
+  console.log('processTrendingNotes', type, content);
   if (type === 'EOSE') {
     const newNotes = sortByScore24h(convertToNotes(trendingNotes));
 

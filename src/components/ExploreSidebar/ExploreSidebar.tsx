@@ -127,6 +127,8 @@ const ExploreSidebar: Component<{ id?: string }> = (props) => {
       },
     });
 
+    console.log("Start get trending users for ExploreSidebar");
+    
     getTrendingUsers(subId, account?.publicKey);
   })
 

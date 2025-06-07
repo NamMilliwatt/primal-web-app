@@ -38,6 +38,7 @@ export const getUserProfileInfo = (pubkey: string | undefined, user_pubkey: stri
     payload.user_pubkey = user_pubkey;
   }
 
+  console.log('getUserProfileInfo', pubkey, user_pubkey, subid, payload);
   sendMessage(JSON.stringify([
     "REQ",
     subid,
@@ -156,6 +157,7 @@ export const getCommonFollowers = (pubkey: string | undefined, user_pubkey: stri
 
 
 export const getTrendingUsers = (subid: string, user_pubkey: string | undefined) => {
+  console.log('getTrendingUsers', subid, user_pubkey);
   sendMessage(JSON.stringify([
     "REQ",
     subid,
@@ -195,7 +197,6 @@ export const getLikes = (pubkey: string | undefined, relays: Relay[], callback: 
     relays.forEach(relay => {
 
       // if (!relay.subscribe) return;
-
 
       const sub = relay.subscribe(
         [
