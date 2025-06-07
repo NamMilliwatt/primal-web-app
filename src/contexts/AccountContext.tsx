@@ -447,35 +447,35 @@ export function AccountProvider(props: { children: JSXElement }) {
     clearSec();
   };
 
-  const setSec = (sec: string | undefined, force?: boolean) => {
-    if (!sec) {
-      logout();
-      return;
-    }
+  // const setSec = (sec: string | undefined, force?: boolean) => {
+  //   if (!sec) {
+  //     logout();
+  //     return;
+  //   }
 
-    const decoded = nip19.decode(sec);
+  //   const decoded = nip19.decode(sec);
 
-    if (decoded.type === 'nsec' && decoded.data) {
-      updateStore('sec', () => sec);
+  //   if (decoded.type === 'nsec' && decoded.data) {
+  //     updateStore('sec', () => sec);
 
-      const pubkey = nostrGetPubkey(decoded.data);
+  //     const pubkey = nostrGetPubkey(decoded.data);
 
-      if (pubkey !== store.publicKey || force) {
-        setPublicKey(pubkey);
-      }
+  //     if (pubkey !== store.publicKey || force) {
+  //       setPublicKey(pubkey);
+  //     }
 
-      // Read profile from storage
-      const storedUser = getStoredProfile(pubkey);
+  //     // Read profile from storage
+  //     const storedUser = getStoredProfile(pubkey);
 
-      if (storedUser) {
-        // If it exists, set it as active user
-        updateStore('activeUser', () => ({...storedUser}));
-      }
+  //     if (storedUser) {
+  //       // If it exists, set it as active user
+  //       updateStore('activeUser', () => ({...storedUser}));
+  //     }
 
-      // Fetch it anyway, maybe there is an update
-      updateAccountProfile(pubkey);
-    }
-  }
+  //     // Fetch it anyway, maybe there is an update
+  //     updateAccountProfile(pubkey);
+  //   }
+  // }
 
   const setPublicKey = (pubkey: string | undefined) => {
 
@@ -655,8 +655,9 @@ export function AccountProvider(props: { children: JSXElement }) {
     const nostr = win.nostr;
 
     const storedKey = localStorage.getItem('pubkey');
+    console.log('Stored pubkey: ', storedKey);
 
-    if (storedKey) {
+    if (storedKey && storedKey !== undefined) {
       console.log('Stored pubkey found: ', storedKey);
       setPublicKey(storedKey);
 
@@ -671,34 +672,38 @@ export function AccountProvider(props: { children: JSXElement }) {
       updateAccountProfile(storedKey);
     }
     else {
-      try {
-            const key = await getPublicKey();
+      // try {
+      //       const key = await getPublicKey();
 
-            if (key === undefined) {
-              setTimeout(fetchNostrKey, 250);
-            }
-            else {
-              if (key !== storedKey) {
-                setPublicKey(key);
+      //       if (key === undefined) {
+      //         setTimeout(fetchNostrKey, 250);
+      //       }
+      //       else {
+      //         if (key !== storedKey) {
+      //           setPublicKey(key);
 
-                // Read profile from storage
-                const storedUser = getStoredProfile(key);
+      //           // Read profile from storage
+      //           const storedUser = getStoredProfile(key);
 
-                if (storedUser) {
-                  // If it exists, set it as active user
-                  updateStore('activeUser', () => ({...storedUser}));
-                }
-              }
+      //           if (storedUser) {
+      //             // If it exists, set it as active user
+      //             updateStore('activeUser', () => ({...storedUser}));
+      //           }
+      //         }
 
-              // Fetch it anyway, maybe there is an update
-              updateAccountProfile(key);
-            }
-          } catch (e: any) {
-            // console.error('Error fetching public key: ', e);
-            setPublicKey(undefined);
-            localStorage.removeItem('pubkey');
-            logError('error fetching public key: ', e);
-      }
+      //         // Fetch it anyway, maybe there is an update
+      //         updateAccountProfile(key);
+      //       }
+      //     } catch (e: any) {
+      //       // console.error('Error fetching public key: ', e);
+      //       setPublicKey(undefined);
+      //       localStorage.removeItem('pubkey');
+      //       logError('error fetching public key: ', e);
+      // }
+
+      setPublicKey(undefined);
+      localStorage.removeItem('pubkey');
+      logError('error fetching public key: ', e);
     }
 
     /// DISABLE SCRIPT GET NSEC
@@ -2034,7 +2039,7 @@ const [store, updateStore] = createStore<AccountContextStore>({
     updateFilterList,
     addToAllowlist,
     removeFromAllowlist,
-    setSec,
+    // setSec,
     logout,
     showGetStarted,
     saveEmoji,

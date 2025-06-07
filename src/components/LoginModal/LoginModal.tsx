@@ -72,6 +72,7 @@ const LoginModal: Component<{
       let pubkeyHex = nip19.decode(npub).data;
       localStorage.setItem('pubkey', pubkeyHex.toString());
 
+      console.log('Login successful and store pubkey:', pubkeyHex.toString());
       account?.actions.setPublicKey(pubkeyHex.toString());
     })
     .catch(error => {
