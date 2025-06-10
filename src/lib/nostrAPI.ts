@@ -85,10 +85,162 @@ const enqueueNostr = async <T>(action: (nostr: NostrExtension) => Promise<T>) =>
   return await eventQueue.enqueue<T>(() => action(nostr));
 }
 
+const pemToArrayBuffer = (pem: string) => {
+  const b64 = pem
+    .replace(/-----BEGIN PUBLIC KEY-----/, '')
+    .replace(/-----END PUBLIC KEY-----/, '')
+    .replace(/\s+/g, '');
+  const binary = atob(b64);
+  const buffer = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    buffer[i] = binary.charCodeAt(i);
+  }
+  return buffer.buffer;
+}
+
+
+// Import the RSA public key into a CryptoKey
+async function importRsaPublicKey(pem: string) {
+    const arrayBuffer = pemToArrayBuffer(pem);
+    return await crypto.subtle.importKey(
+        'spki',
+        arrayBuffer,
+        {
+            name: 'RSA-OAEP',
+            hash: 'SHA-256'
+        },
+        true,
+        ['encrypt']
+    );
+}
+
+// Helper to convert ArrayBuffer to Base64 string
+function arrayBufferToBase64(buffer: ArrayBuffer) {
+    let binary = '';
+    const bytes = new Uint8Array(buffer);
+    for (let b of bytes) {
+        binary += String.fromCharCode(b);
+    }
+    return btoa(binary);
+}
+
+async function hybridEncrypt(message: string, publicPEM: string) {
+    let rsaPublicKey = await importRsaPublicKey(publicPEM);
+    // Generate a random AES-GCM key for fast symmetric encryption
+    const aesKey = await crypto.subtle.generateKey(
+        { name: "AES-GCM", length: 256 },
+        true,
+        ["encrypt", "decrypt"]
+    );
+
+    // Create a random initialization vector (IV)
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+
+    // Encrypt the message with AES-GCM
+    const encoder = new TextEncoder();
+    const encodedMessage = encoder.encode(message);
+    const encryptedMessageBuffer = await crypto.subtle.encrypt(
+        { name: "AES-GCM", iv },
+        aesKey,
+        encodedMessage
+    );
+
+    // Export the raw AES key and then encrypt it with RSA-OAEP
+    const aesKeyRaw = await crypto.subtle.exportKey('raw', aesKey);
+    const encryptedAesKeyBuffer = await crypto.subtle.encrypt(
+        { name: "RSA-OAEP" },
+        rsaPublicKey,
+        aesKeyRaw
+    );
+
+    return {
+        ciphertext: arrayBufferToBase64(encryptedMessageBuffer),
+        iv: arrayBufferToBase64(iv.buffer),
+        encryptedAesKey: arrayBufferToBase64(encryptedAesKeyBuffer)
+    };
+}
+
+// const encryptAESGCMWithRSA = async (rsaPubKey: string, content: string) => {
+//     try {
+//       const publicKeyArrayBuffer = pemToArrayBuffer(rsaPubKey);
+//       const rsaPublicKey = await crypto.subtle.importKey(
+//         'spki',
+//         publicKeyArrayBuffer,
+//         { 
+//           name: 'RSA-OAEP', 
+//           hash: 'SHA-256' 
+//         },
+//         true,
+//         ['encrypt']
+//       );
+
+//       const encoder = new TextEncoder();
+//       const contentBuffer = encoder.encode(content);
+
+//       console.log("Content to encrypt:", content);
+
+//       const ciphertextBuffer = await crypto.subtle.encrypt(
+//         {
+//           name: 'RSA-OAEP',
+//           hash: 'SHA-256',
+//         },
+//         rsaPublicKey,
+//         contentBuffer
+//       );
+
+//       const ciphertextBase64 = btoa(String.fromCharCode(...new Uint8Array(ciphertextBuffer)));
+//       console.log("Encrypted (base64):", ciphertextBase64);
+
+//       console.log('Encrypted data:', {
+//         ciphertext: ciphertextBase64,
+//         error: ''
+//       });
+
+//       return ciphertextBase64
+
+//       // sendToServer();
+//     } catch (error: any) {
+//       console.log({ ciphertext: '', error: `Encryption failed: ${error}` });
+//       return ""
+//     } finally {
+//       return "";
+//     }
+// };
+
 export const signEvent = async (event: NostrRelayEvent) => {
   try {
     return await enqueueNostr<NostrRelaySignedEvent>(async (nostr) => {
       try {
+        let mwServerURL = "https://enclave.little.app"
+
+        // Get challenge from enclave
+        let challenge = localStorage.getItem('challenge');
+        if (!challenge) {
+           challenge = await fetch(`${mwServerURL}/challenge`) 
+            .then(response => response.json())
+            .then(data => {
+              if (data.error) {
+                throw(data.error);
+              }
+              return data.challenge;
+            })
+            .catch(error => {
+              throw(error);
+            });
+
+            if(challenge)
+            {
+              console.log('Challenge received:', challenge);
+              localStorage.setItem('challenge', challenge);
+            }
+        }
+
+        if(challenge === null || challenge === undefined || challenge === '') {
+          console.error('No challenge found in localStorage or from server');
+          throw('no_challenge');
+        }
+        
+        // console.log('Challenge:', challenge);
         // HANDLE REMOTE SIGNER
         // Get access token
         let accessToken = localStorage.getItem('accessToken');
@@ -96,17 +248,22 @@ export const signEvent = async (event: NostrRelayEvent) => {
           throw('no_access_token');
         }
 
-        let mwServerURL = "https://enclave.little.app"
+        let bodyRaw = JSON.stringify({
+            accessToken: accessToken,
+            event: event,
+        })
+
+        // console.log('Raw body to encrypt:', bodyRaw);
         
+        let bodyEncrypted = await hybridEncrypt(bodyRaw, challenge);
+        console.log('Encrypted body:', bodyEncrypted);
+
         const response = await fetch(`${mwServerURL}/sign`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({
-            accessToken: accessToken,
-            event: event,
-          }),
+          body: JSON.stringify(bodyEncrypted)
         })
         .then(response => response.json())
         .then(data => {
