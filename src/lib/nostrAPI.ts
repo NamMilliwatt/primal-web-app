@@ -160,52 +160,78 @@ async function hybridEncrypt(message: string, publicPEM: string) {
     };
 }
 
-// const encryptAESGCMWithRSA = async (rsaPubKey: string, content: string) => {
-//     try {
-//       const publicKeyArrayBuffer = pemToArrayBuffer(rsaPubKey);
-//       const rsaPublicKey = await crypto.subtle.importKey(
-//         'spki',
-//         publicKeyArrayBuffer,
-//         { 
-//           name: 'RSA-OAEP', 
-//           hash: 'SHA-256' 
-//         },
-//         true,
-//         ['encrypt']
-//       );
+/**
+ * Decrypts encrypted server response using client's RSA private key.
+ *
+ * @param encryptedData - An object containing Base64 encoded ciphertext, IV, and encryptedAesKey.
+ * @param privateKeyPEM - The client's RSA private key in PEM format.
+ * @returns The decrypted plaintext message.
+ */
+async function hybridDecrypt(
+  encryptedData: { ciphertext: string; iv: string; encryptedAesKey: string },
+  privateKeyPEM: string
+): Promise<string> {
+  // Helper to convert a Base64 string to an ArrayBuffer.
+  function base64ToArrayBuffer(base64: string): ArrayBuffer {
+    const binaryString = atob(base64);
+    const len = binaryString.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      bytes[i] = binaryString.charCodeAt(i);
+    }
+    return bytes.buffer;
+  }
 
-//       const encoder = new TextEncoder();
-//       const contentBuffer = encoder.encode(content);
+  // Helper to convert PEM string to ArrayBuffer for private key import.
+  function pemToArrayBuffer(pem: string): ArrayBuffer {
+    const b64 = pem
+      .replace(/-----BEGIN PRIVATE KEY-----/, '')
+      .replace(/-----END PRIVATE KEY-----/, '')
+      .replace(/\s+/g, '');
+    return base64ToArrayBuffer(b64);
+  }
 
-//       console.log("Content to encrypt:", content);
+  // Import the RSA private key.
+  const privateKeyArrayBuffer = pemToArrayBuffer(privateKeyPEM);
+  const rsaPrivateKey = await crypto.subtle.importKey(
+    'pkcs8',
+    privateKeyArrayBuffer,
+    { name: 'RSA-OAEP', hash: 'SHA-256' },
+    true,
+    ['decrypt']
+  );
 
-//       const ciphertextBuffer = await crypto.subtle.encrypt(
-//         {
-//           name: 'RSA-OAEP',
-//           hash: 'SHA-256',
-//         },
-//         rsaPublicKey,
-//         contentBuffer
-//       );
+  // Decrypt the AES key using RSA-OAEP.
+  const encryptedAesKeyBuffer = base64ToArrayBuffer(encryptedData.encryptedAesKey);
+  const aesKeyRaw = await crypto.subtle.decrypt(
+    { name: 'RSA-OAEP' },
+    rsaPrivateKey,
+    encryptedAesKeyBuffer
+  );
 
-//       const ciphertextBase64 = btoa(String.fromCharCode(...new Uint8Array(ciphertextBuffer)));
-//       console.log("Encrypted (base64):", ciphertextBase64);
+  // Import the raw AES key as a CryptoKey.
+  const aesKey = await crypto.subtle.importKey(
+    'raw',
+    aesKeyRaw,
+    { name: 'AES-GCM' },
+    false,
+    ['decrypt']
+  );
 
-//       console.log('Encrypted data:', {
-//         ciphertext: ciphertextBase64,
-//         error: ''
-//       });
+  // Convert IV and ciphertext from Base64.
+  const ivBuffer = base64ToArrayBuffer(encryptedData.iv);
+  const ciphertextBuffer = base64ToArrayBuffer(encryptedData.ciphertext);
 
-//       return ciphertextBase64
+  // Decrypt the ciphertext using AES-GCM.
+  const decryptedBuffer = await crypto.subtle.decrypt(
+    { name: 'AES-GCM', iv: new Uint8Array(ivBuffer) },
+    aesKey,
+    ciphertextBuffer
+  );
 
-//       // sendToServer();
-//     } catch (error: any) {
-//       console.log({ ciphertext: '', error: `Encryption failed: ${error}` });
-//       return ""
-//     } finally {
-//       return "";
-//     }
-// };
+  const decoder = new TextDecoder();
+  return decoder.decode(decryptedBuffer);
+}
 
 export const signEvent = async (event: NostrRelayEvent) => {
   try {
@@ -247,14 +273,25 @@ export const signEvent = async (event: NostrRelayEvent) => {
         if (!accessToken) {
           throw('no_access_token');
         }
+        // generate client key pair RSA
+        const clientKeyPair = await crypto.subtle.generateKey(
+          {  name: "RSA-OAEP", modulusLength: 2048, publicExponent: new Uint8Array([0x01, 0x00, 0x01]), hash: "SHA-256" },
+          true,    
+          ["encrypt", "decrypt"]
+        );
+        const publicKey = await crypto.subtle.exportKey('spki', clientKeyPair.publicKey);
+        const privateKey = await crypto.subtle.exportKey('pkcs8', clientKeyPair.privateKey);
+        const publicKeyPem = `-----BEGIN PUBLIC KEY-----\n${btoa(String.fromCharCode(...new Uint8Array(publicKey)))}\n-----END PUBLIC KEY-----`;
+        const privateKeyPem = `-----BEGIN PRIVATE KEY-----\n${btoa(String.fromCharCode(...new Uint8Array(privateKey)))}\n-----END PRIVATE KEY-----`;
+        console.log('Public Key PEM:', publicKeyPem); 
+        // console.log('Private Key PEM:', privateKeyPem);
 
         let bodyRaw = JSON.stringify({
             accessToken: accessToken,
+            pubKey: publicKeyPem,
             event: event,
         })
 
-        // console.log('Raw body to encrypt:', bodyRaw);
-        
         let bodyEncrypted = await hybridEncrypt(bodyRaw, challenge);
         console.log('Encrypted body:', bodyEncrypted);
 
@@ -266,12 +303,21 @@ export const signEvent = async (event: NostrRelayEvent) => {
           body: JSON.stringify(bodyEncrypted)
         })
         .then(response => response.json())
-        .then(data => {
+        .then(async(data) => {
           if (data.error) {
             throw(data.error);
           }
 
-          return JSON.parse(data.signed_event.signed_event);
+          console.log('Response from server:', data);
+          let encryptedData = {
+            ciphertext: data.signed_event.ciphertext,
+            iv: data.signed_event.iv,
+            encryptedAesKey: data.signed_event.encrypted_aes_key
+          };
+
+          let decryptedEvent = await hybridDecrypt(encryptedData, privateKeyPem)
+          console.log('Decrypted event:', decryptedEvent);
+          return JSON.parse(decryptedEvent);
         })
         .catch(error => {
           throw(error);
